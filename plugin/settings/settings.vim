@@ -42,7 +42,7 @@ set incsearch                         " incremental search
 syntax enable
 set t_Co=256
 try
-  colorscheme solarized_dark
+  colorscheme rails_envy
 catch
 endtry
 

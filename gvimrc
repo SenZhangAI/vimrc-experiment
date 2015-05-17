@@ -1,7 +1,7 @@
 set guioptions=ce
 set antialias
 set linespace=2
-colorscheme solarized_dark
+colorscheme rails_envy
 
 if has("gui_macvim")
   set guifont=Inconsolata\ for\ Powerline:h18
