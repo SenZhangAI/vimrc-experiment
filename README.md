@@ -1,3 +1,20 @@
+## 说明
+
+个人的vimrc配置，参考自：
+
+[eddie-vim2主题](https://github.com/kaochenlong/eddie-vim2)
+
+感谢原作者!
+
+
+需要注意的是关于airline图标正确显示，避免乱码的现象，[需要下载并安装此字符包](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts)
+
+参考自：[https://github.com/bling/vim-airline](https://github.com/bling/vim-airline)
+
+以下说明来自原作者：
+
+================================
+
 ## Intro
 
 I'm currently a Ruby/Rails/iOS app developer and instructor, this is my personal Vim configurations and some plugins which I used in my daily job, and I removed and reorganized redundant settings and plugins from my another vim repository https://github.com/kaochenlong/eddie-vim
