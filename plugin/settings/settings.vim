@@ -12,7 +12,7 @@ set linespace=0
 set cursorline
 set nofoldenable
 set number
-set numberwidth=4
+set numberwidth=6
 set title
 set showmode
 set nobomb                            " no BOM(Byte Order Mark)
