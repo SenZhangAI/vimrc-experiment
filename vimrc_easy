@@ -15,8 +15,8 @@ noremap <CR> o<Esc>
 noremap <BS> X
 
 " map ctrl+c and ctrl+v
-noremap <C-c> y
-noremap <C-v> P
+"noremap <C-c> y
+"noremap <C-v> P
 
 " navigating for long lines
 map j gj
