@@ -4,7 +4,7 @@
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
-  colorscheme github
+  colorscheme morning
 
   if has("gui_macvim")
     set guifont=Monaco:h25           " for Mac
@@ -14,7 +14,7 @@ function! PresentationModeOn()
 endfunction
 
 function! PresentationModeOff()
-  colorscheme solarized_dark
+  colorscheme rails_envy
 
   if has("gui_macvim")
     set guifont=Monaco:h17           " for Mac
