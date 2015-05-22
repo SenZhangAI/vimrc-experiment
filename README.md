@@ -11,6 +11,12 @@
 
 参考自：[https://github.com/bling/vim-airline](https://github.com/bling/vim-airline)
 
+初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/taglist.vim`中，修改为：
+
+```vim
+let Tlist_Ctags_Cmd='/your/path/ctags'
+```
+
 以下说明来自原作者：
 
 ================================
