@@ -12,11 +12,12 @@
 
 参考自：[https://github.com/bling/vim-airline](https://github.com/bling/vim-airline)
 
-初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/taglist.vim`中，修改为：
+初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/tagbar.vim`中，修改为：
 
 ```vim
 let Tlist_Ctags_Cmd='/your/path/ctags'
 ```
+
 
 ## 插件介绍
 
@@ -66,6 +67,29 @@ t/T    | 在新tab中打开文件，T则是不跳转过去
 :tabo  | 关闭其他tab
 R      | 递归刷新根节点目录
 m      | 打开一个menu，可新建文件或者删除文件
+
+### 4. ctrlp
+
+类似于sublime text的Ctrl+p功能，快速模糊查找文件。
+其快捷键可以参考[这里](https://github.com/kien/ctrlp.vim)
+
+用的最多的是 C-t 在新的tab中打开文件。
+
+### 4. tagbar
+
+是taglist的替代品，比taglist好用，
+
+需要先安装ctags，并将ctags的路径配置给`plugin/settings/tagbar.vim`。
+
+<F4> 打开/隐藏tagbar
+
+如出现乱码，尝试选择不同的`g:tagbar_iconchars`。
+
+如需默认打开某指定文件，参考：
+
+```cpp
+autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
+```
 
 ## 其他参考：
 
