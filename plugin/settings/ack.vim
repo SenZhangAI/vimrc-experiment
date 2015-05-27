@@ -1,8 +1,10 @@
 " if silver searcher is installed, use `ag` instead of `ack`
 " for more information, please visit https://github.com/ggreer/the_silver_searcher
 
-if executable("ag")
-  let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ag_highlight = 1
+
+if executable("Ag")
+  let g:ackprg = 'ag --vimgrep'
   noremap FF :Ack<SPACE>
 else
   if executable("ack")

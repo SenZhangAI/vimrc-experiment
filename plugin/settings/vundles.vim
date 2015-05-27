@@ -3,6 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+let g:vundle_default_git_proto = 'git'
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -68,13 +69,13 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 " @ Plugin --- [ Git && Shell Tools ]
 "Plugin 'Shougo/vimproc.vim'
 "Plugin 'Shougo/vimshell.vim'
-"Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
 "Plugin 'mattn/webapi-vim'
 "Plugin 'airblade/vim-gitgutter'
 
 
 " @ Plugin --- [ Code BAT Sreach ]
-"Plugin 'rking/ag.vim'
+Plugin 'rking/ag.vim'
 "Plugin 'thinca/vim-quickrun'
 "Plugin 'dyng/ctrlsf.vim'
 "Plugin 'mklabs/grunt.vim'
@@ -116,3 +117,4 @@ filetype plugin indent on    " required
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
