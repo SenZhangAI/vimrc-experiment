@@ -10,4 +10,4 @@ let g:tagbar_iconchars = ['▶', '▼']  "(default on Linux and Mac OS X)
 "let g:tagbar_iconchars = ['▷', '◢']
 "let g:tagbar_iconchars = ['+', '-']  "(default on Windows)
 
-autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
+"autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
