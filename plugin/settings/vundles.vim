@@ -16,10 +16,11 @@ Plugin 'gmarik/vundle'
 " @ Plugin --- [ Style Custom ]
 "Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline', {'name': 'airline'}
+Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'terryma/vim-smooth-scroll'
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
-
+"Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
 
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'

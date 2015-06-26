@@ -4,22 +4,30 @@
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
-  colorscheme morning
 
   if has("gui_macvim")
-    set guifont=Monaco:h25           " for Mac
+    "set guifont=Monaco:h22           " for Mac
   elseif has("gui_gtk")
-    set guifont=Monospace\ 22        " for ubuntu
+    colorscheme solarized
+    set background=light
+    "set guifont= Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
+" for ubuntu
+  else
+    colorscheme Tomorrow
   end
 endfunction
 
-function! PresentationModeOff()
-  colorscheme rails_envy
+  function! PresentationModeOff()
 
   if has("gui_macvim")
-    set guifont=Monaco:h17           " for Mac
+    "set guifont=Monaco:h17           " for Mac
   elseif has("gui_gtk")
-    set guifont=Monospace\ 14        " for ubuntu
+    colorscheme solarized
+    set background=dark
+    "set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
+" for ubuntu
+  else
+    colorscheme Tomorrow-Night
   end
 endfunction
 

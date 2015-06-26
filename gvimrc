@@ -1,22 +1,22 @@
 set guioptions=ce
 set antialias
 set linespace=2
-colorscheme rails_envy
+colorscheme solarized
 
 if has("gui_macvim")
   set guifont=Inconsolata\ for\ Powerline:h18
 elseif has("gui_gtk")
-  set guifont=Monospace\ 16
+  set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
 else
   set guifont=Monaco:h18
 end
 
 if has("gui_running")
-  set transparency=0
+  "set transparency=0
 
   " disable default menu hot key
-  macmenu &File.New\ Window key=<nop>
-  macmenu &File.Close key=<nop>
+  "macmenu &File.New\ Window key=<nop>
+  "macmenu &File.Close key=<nop>
 
   " remap cmd + w to close tab
   map <D-w> :tabclose<CR>
