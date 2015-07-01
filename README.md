@@ -6,18 +6,29 @@
 
 感谢原作者!
 
+## 安装步骤
+
+```bash
+~ $ git clone https://github/SenZhangAI/vimrc ~/.vim
+~ $ chmod 755 ~/.vim/install.sh
+~ $ ~/.vim/install.sh
+```
+
 ## 安装注意事项
 
-需要注意的是关于airline图标正确显示，避免乱码的现象，[需要下载并安装此字符包](https://powerline.readthedocs.org/en/master/installation.html#patched-fonts)
+有些步骤以集成至上述`install.sh`中，但还有些不同系统处理方式不一样。所以需要额外步骤：
+
+### 1. 修正airline的图标乱码，修改终端的字符
 
 参考自：[https://github.com/bling/vim-airline](https://github.com/bling/vim-airline)
+其中install.sh中已经安装了fonts，然而有时候需要修改所用的终端字体为powerline类的字体
 
+### 2. 安装ctags，配置ctags路径
 初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/tagbar.vim`中，修改为：
 
 ```vim
 let Tlist_Ctags_Cmd='/your/path/ctags'
 ```
-
 
 ## 插件介绍
 
