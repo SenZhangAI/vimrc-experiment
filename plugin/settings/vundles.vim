@@ -100,7 +100,7 @@ Plugin 'kien/ctrlp.vim', {'name': 'ctrlp'}
 "Plugin 'StanAngeloff/php.vim'
 
 " @ Plugin --- [ ADV Program Language ]
-"Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " @ Plugin --- [ Code Format ]
 "Plugin 'godlygeek/tabular'
