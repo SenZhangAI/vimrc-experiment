@@ -12,4 +12,13 @@ set fillchars+=stl:\ ,stlnc:\
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#buffer_nr_format='%s: '
-let g:airline_theme='wombat'
+
+" Below setting are moved to setting and gvimrc
+"this airline_theme is default, but will changed by shift presentation_mode
+"if has("gui_macvim")
+"elseif has("gui_gtk")
+  "let g:airline_theme='solarized'
+"" for ubuntu
+"else
+  "let g:airline_theme='tomorrow'
+"end

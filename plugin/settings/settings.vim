@@ -42,9 +42,12 @@ set incsearch                         " incremental search
 syntax enable
 set t_Co=256
 try
-  colorscheme Tomorrow-Night
+  colorscheme Tomorrow-Night-Bright
 catch
 endtry
+"this airline_theme is default,
+"but will changed by shift presentation_mode
+let g:airline_theme='tomorrow'
 
 set nobackup                          " no *~ backup files
 set noswapfile

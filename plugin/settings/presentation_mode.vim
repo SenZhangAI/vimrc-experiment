@@ -4,30 +4,34 @@
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
+  set background=light
 
   if has("gui_macvim")
     "set guifont=Monaco:h22           " for Mac
   elseif has("gui_gtk")
     colorscheme solarized
-    set background=light
+    let g:airline_theme='solarized'
     "set guifont= Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
 " for ubuntu
   else
     colorscheme Tomorrow
+    let g:airline_theme='tomorrow'
   end
 endfunction
 
-  function! PresentationModeOff()
+function! PresentationModeOff()
+  set background=dark
 
   if has("gui_macvim")
     "set guifont=Monaco:h17           " for Mac
   elseif has("gui_gtk")
     colorscheme solarized
-    set background=dark
+    let g:airline_theme='solarized'
     "set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
 " for ubuntu
   else
-    colorscheme Tomorrow-Night
+    colorscheme Tomorrow-Night-Bright
+    let g:airline_theme='tomorrow'
   end
 endfunction
 
