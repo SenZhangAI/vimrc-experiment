@@ -2,9 +2,6 @@ set guioptions=ce
 set antialias
 set linespace=2
 colorscheme solarized
-"this airline_theme is default settting,
-"but will changed by shift presentation_mode
-let g:airline_theme='solarized'
 
 if has("gui_macvim")
   set guifont=Inconsolata\ for\ Powerline:h18

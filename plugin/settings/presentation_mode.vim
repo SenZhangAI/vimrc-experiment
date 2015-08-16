@@ -8,11 +8,8 @@ function! PresentationModeOn()
 
   if has("gui_macvim")
     "set guifont=Monaco:h22           " for Mac
-  elseif has("gui_gtk")
-    colorscheme solarized
-    let g:airline_theme='solarized'
-    "set guifont= Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
-" for ubuntu
+  elseif has("gui_running")
+    " as default solaried & luna theme
   else
     colorscheme Tomorrow
     let g:airline_theme='tomorrow'
@@ -24,11 +21,8 @@ function! PresentationModeOff()
 
   if has("gui_macvim")
     "set guifont=Monaco:h17           " for Mac
-  elseif has("gui_gtk")
-    colorscheme solarized
-    let g:airline_theme='solarized'
-    "set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ Regular\ 12
-" for ubuntu
+  elseif has("gui_running")
+    " as default solaried & luna theme
   else
     colorscheme Tomorrow-Night-Bright
     let g:airline_theme='tomorrow'
