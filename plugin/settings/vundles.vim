@@ -34,7 +34,7 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'ryanoasis/vim-webdevicons'
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
 "Plugin 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
-"Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 "Plugin 'danro/rename.vim'
 
 " @ Plugin --- [ |Google| Geeks Plugin ]

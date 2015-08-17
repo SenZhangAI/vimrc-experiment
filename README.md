@@ -36,7 +36,7 @@ let Tlist_Ctags_Cmd='/your/path/ctags'
 
 用来管理vim插件，可直接将插件安装至`~/.vim/bundle/`目录下。卸载直接删除。避免vim插件安装和卸载的麻烦。[参考资料](http://blog.csdn.net/zhaoyw2008/article/details/8012757)
 
-例如安装NEROTree只需：
+例如安装NERDTree只需：
 
 ```bash
 ~ $ cd .vim/bundle/
@@ -45,14 +45,14 @@ let Tlist_Ctags_Cmd='/your/path/ctags'
 
 如需更新执行`git pull origin`，卸载则直接删除。
 
-以上仅适用于支持git的插件
+简单来说，在pathogen的支持下，添加\卸载插件变得十分简单，仅需将插件加入bundle文件夹内，或直接删除。
 
 ### 2. vundle
 
 如上安装过程如果每次都要每个更新是不是很繁琐？实际上完全可以自动化让vim自己下载和更新，
 这就是vundle所做的工作。
 
-原理是告诉vundle需要的插件在哪里下载，修改本项目中的`plugin\settings\vundles.vim`文件，将需要的插件添加进去，然后执行`:PluginInstall`自动下载更新。
+原理是告诉vundle需要的插件的下载地址，修改本项目中的`plugin\settings\vundles.vim`文件，将需要的插件添加进去，然后执行`:PluginInstall`自动下载更新。
 
 ### 3. NERDTree
 
@@ -78,6 +78,7 @@ t/T    | 在新tab中打开文件，T则是不跳转过去
 :tabo  | 关闭其他tab
 R      | 递归刷新根节点目录
 m      | 打开一个menu，可新建文件或者删除文件
+u      | 进入上一层文件夹
 
 ### 4. ctrlp
 
@@ -86,7 +87,7 @@ m      | 打开一个menu，可新建文件或者删除文件
 
 用的最多的是 C-t 在新的tab中打开文件。
 
-### 4. tagbar
+### 5. tagbar
 
 是taglist的替代品，比taglist好用，
 
@@ -101,6 +102,19 @@ m      | 打开一个menu，可新建文件或者删除文件
 ```cpp
 autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 ```
+
+### 6. nerdcommenter
+
+用于快速注释一段代码，或者加入多行注释，常用的快捷键如下：
+
+|        键位        |   功能描述   |
+|--------------------|--------------|
+| `<leader><leader>` | 快速注释一行 |
+| `<leader>cs`       | 多行注释     |
+
+
+
+快速注释一行
 
 ## 其他参考：
 
