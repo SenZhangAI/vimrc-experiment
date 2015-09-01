@@ -45,7 +45,7 @@ if [ -d ./bundle/vundle ]; then
   rm -rf ./bundle/vundle
 fi
 
-git clone https://github.com/gmarik/Vundle.vim ./bundle/vundle
+git clone https://github.com/VundleVim/Vundle.vim ./bundle/vundle
 
 ## install plugin
 vim +PluginInstall +qall

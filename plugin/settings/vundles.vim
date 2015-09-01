@@ -9,7 +9,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " # Plugins Beginning #
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/vundle'
 "Plugin 'L9'
 "Plugin 'tomtom/tlib_vim'
 
@@ -26,7 +26,7 @@ Plugin 'altercation/vim-colors-solarized'
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'
 Plugin 'majutsushi/tagbar'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 
 " NERDTree Plugins Collections
@@ -55,6 +55,7 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 "Plugin 'gcmt/wildfire.vim'
 "Plugin 'tpope/vim-abolish'
 "Plugin 'tpope/vim-surround'
+Plugin 'msanders/snipmate.vim'
 
 
 " @ Plugin --- [ CWD File Buffer Manager ]
