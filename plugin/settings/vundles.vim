@@ -9,7 +9,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " # Plugins Beginning #
-Plugin 'VundleVim/vundle'
+Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 "Plugin 'L9'
 "Plugin 'tomtom/tlib_vim'
 
@@ -55,7 +55,7 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 "Plugin 'gcmt/wildfire.vim'
 "Plugin 'tpope/vim-abolish'
 "Plugin 'tpope/vim-surround'
-Plugin 'msanders/snipmate.vim'
+Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 
 
 " @ Plugin --- [ CWD File Buffer Manager ]

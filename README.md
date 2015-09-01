@@ -131,5 +131,5 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 [tagbar]:https://github.com/majutsushi/tagbar
 [Nerdcommenter]:https://github.com/scrooloose/nerdcommenter
 [syntastic]:https://github.com/scrooloose/syntastic
-[snipmate]:https://github.com/msanders/snipmate.vim
+[snipmate]:https://github.com/garbas/vim-snipmate
 
