@@ -57,7 +57,7 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 Plugin 'tpope/vim-surround', {'name': 'surround'}
 
 "snipmate is depend on vim-addon-mw-utils and tlib_vim
-Plugin 'MarcWerber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
+Plugin 'marcwerber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
 Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 
