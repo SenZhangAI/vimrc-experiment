@@ -1,0 +1,3 @@
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = git@github.com:SenZhangAI/vim-snippets

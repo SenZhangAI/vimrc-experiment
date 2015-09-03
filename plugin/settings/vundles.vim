@@ -60,7 +60,6 @@ Plugin 'tpope/vim-surround', {'name': 'surround'}
 Plugin 'marcweber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
 Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
-Plugin 'spf13/snipmate-snippets'
 
 " @ Plugin --- [ CWD File Buffer Manager ]
 "Plugin 'Shougo/neomru.vim'

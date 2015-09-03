@@ -119,6 +119,9 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 用于代码错误检查。
 
 ### 8. [snipmate]
+用于快速输入给定的代码片段，其中模板来自另一个仓库[vim-snippets]，此仓库fork自[honza/vim-snippets]。
+仓库[vim-snippets]会跟进原仓库[honza/vim-snippets]的更新，并在此基础上做个性化的改进，
+目前主要想将IntelliJ IDEA中的快捷片段模板移植进来。
 
 ## 其他参考：
 
@@ -132,4 +135,5 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 [Nerdcommenter]:https://github.com/scrooloose/nerdcommenter
 [syntastic]:https://github.com/scrooloose/syntastic
 [snipmate]:https://github.com/garbas/vim-snipmate
-
+[vim-snippets]:https://github.com/SenZhangAI/vim-snippets
+[honza/vim-snippets]:https://github.com/honza/vim-snippets
