@@ -5,8 +5,10 @@
 " identation
 nmap <TAB> v>
 nmap <S-TAB> v<
-vmap <TAB> >gv
-vmap <S-TAB> <gv
+
+"this will cause conflict with snippetmate
+"vmap <TAB> >gv
+"vmap <S-TAB> <gv
 
 " move lines up and down using ctrl+[jk]
 nmap <c-k> mz:m-2<cr>`z
