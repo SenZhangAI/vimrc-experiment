@@ -1,7 +1,7 @@
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
-let NERDTreeShowBookmarks=0
+"let NERDTreeShowBookmarks=0 "default = 0
+"let NERDTreeHighlightCursorline=1 "default = 1
 let NERDTreeChDirMode=2
-let NERDTreeHighlightCursorline=1
 let NERDTreeMouseMode=2
 let g:nerdtree_tabs_focus_on_files=1
 let g:nerdtree_tabs_open_on_gui_startup=0
