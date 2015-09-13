@@ -123,6 +123,16 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 仓库[vim-snippets]会跟进原仓库[honza/vim-snippets]的更新，并在此基础上做个性化的改进，
 目前主要想将IntelliJ IDEA中的快捷片段模板移植进来。
 
+### 9. [Gundo]
+每次将缓存写入文件时，记录历史，并提供修改的diff，就类似与一个简单的版本回退功能。
+具体参见[Gundo]说明。
+快捷键设置为`<F5>`
+
+### 10.[easy-align]
+用于代码中的`=`, `,`, `:`,以及markdown表格中常用的`|`等字符的自动对齐，使得代码更为美观，使用方法参见[easy-align]
+快捷键设置为`<leader>=`
+对比过tabular和easy-align，easy-align更为出色，尤其在`+=`等符号上，tabular无法准确识别。
+
 ## 其他参考：
 
 [原作者说明文档](https://github.com/kaochenlong/eddie-vi://github.com/kaochenlong/eddie-vim2)
@@ -137,3 +147,5 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 [snipmate]:https://github.com/garbas/vim-snipmate
 [vim-snippets]:https://github.com/SenZhangAI/vim-snippets
 [honza/vim-snippets]:https://github.com/honza/vim-snippets
+[Gundo]:sjl.bitbucket.org/gundo.vim
+[easy-align]:https://github.com/junegunn/vim-easy-align

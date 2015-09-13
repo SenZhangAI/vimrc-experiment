@@ -48,7 +48,7 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 " @ Plugin --- [ Auto Complete ]
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets'
+"Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
 "Plugin 'mattn/emmet-vim'
 "Plugin 'c9s/perlomni.vim'
 "Plugin 'gcmt/wildfire.vim'
@@ -76,7 +76,7 @@ Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 "Plugin 'Shougo/vimshell.vim'
 Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
 "Plugin 'mattn/webapi-vim'
-"Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 
 " @ Plugin --- [ Code BAT Sreach ]
