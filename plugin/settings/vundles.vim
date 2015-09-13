@@ -14,10 +14,8 @@ Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 "Plugin 'tomtom/tlib_vim'
 
 " @ Plugin --- [ Style Custom ]
-"Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline', {'name': 'airline'}
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
-"Plugin 'terryma/vim-smooth-scroll'
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
@@ -108,7 +106,7 @@ Plugin 'kien/ctrlp.vim', {'name': 'ctrlp'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " @ Plugin --- [ Code Format ]
-"Plugin 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 
 
 
