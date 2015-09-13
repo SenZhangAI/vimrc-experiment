@@ -20,6 +20,7 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Yggdroot/indentLine'
 
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'
