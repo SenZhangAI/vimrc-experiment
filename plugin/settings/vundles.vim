@@ -23,7 +23,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Yggdroot/indentLine'
 
 " @ Plugin --- [ Source Code Cheacker ]
-"Plugin 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 
