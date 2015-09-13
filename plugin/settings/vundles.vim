@@ -106,7 +106,8 @@ Plugin 'kien/ctrlp.vim', {'name': 'ctrlp'}
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " @ Plugin --- [ Code Format ]
-Plugin 'godlygeek/tabular'
+" align tool, better than tabular
+Plugin 'junegunn/vim-easy-align'
 
 
 
