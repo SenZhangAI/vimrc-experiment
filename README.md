@@ -163,6 +163,9 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 | `[T`                 | :tfirst        |
 | `]T`                 | :tlast         |
 
+### 12.[delimitMate]
+用于冒号，引号等的自动补全。
+
 (Note that <C-Q> only works in a terminal if you disable flow control: stty -ixon)
 
 ## 其他参考：
@@ -182,3 +185,4 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 [Gundo]:sjl.bitbucket.org/gundo.vim
 [easy-align]:https://github.com/junegunn/vim-easy-align
 [unimpaired]:https://github.com/tpope/vim-unimpaired
+[delimitMate]:https://github.com/Raimondi/delimitMate

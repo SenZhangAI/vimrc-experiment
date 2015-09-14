@@ -48,7 +48,7 @@ Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 
 
 " @ Plugin --- [ Auto Complete ]
-"Plugin 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
 "Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
@@ -94,7 +94,6 @@ Plugin 'kien/ctrlp.vim'
 "Plugin 'othree/javascript-libraries-syntax.vim'
 "Plugin 'othree/yajs.vim'
 "Plugin 'chrisbra/Colorizer'
-"Plugin 'skammer/vim-css-color'
 "Plugin 'ap/vim-css-color'
 "Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'othree/html5.vim'
@@ -107,7 +106,6 @@ Plugin 'kien/ctrlp.vim'
 
 " @ Plugin --- [ ADV Program Language ]
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
-" Plugin 'kchmck/vim-coffee-script', {'name': 'coffeescript'}
 
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
