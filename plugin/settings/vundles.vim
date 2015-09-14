@@ -51,8 +51,8 @@ Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
-"Plugin 'mattn/emmet-vim'
-"Plugin 'c9s/perlomni.vim'
+"Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
+"Plugin 'c9s/perlomni.vim'    " for perl
 "Plugin 'gcmt/wildfire.vim'
 "Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-surround', {'name': 'surround'}
@@ -107,6 +107,7 @@ Plugin 'kien/ctrlp.vim'
 
 " @ Plugin --- [ ADV Program Language ]
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
+" Plugin 'kchmck/vim-coffee-script', {'name': 'coffeescript'}
 
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
