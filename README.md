@@ -87,7 +87,7 @@ F2： 显示/隐藏NERDTree
 类似于sublime text的Ctrl+p功能，快速模糊查找文件。
 其快捷键可以参考[这里](https://github.com/kien/ctrlp.vim)
 
-用的最多的是 C-t 在新的tab中打开文件。
+用的最多的是 `<C-t>` 在新的tab中打开文件。
 
 ### 5. [tagbar]
 
@@ -163,10 +163,22 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 | `[T`                 | :tfirst        |
 | `]T`                 | :tlast         |
 
+(Note that <C-Q> only works in a terminal if you disable flow control: stty -ixon)
+
 ### 12.[delimitMate]
 用于冒号，引号等的自动补全。
 
-(Note that <C-Q> only works in a terminal if you disable flow control: stty -ixon)
+### 13.[fugitive],[gitv],[gitgutter]
+[fugitive]可以使得vim具备git功能，主要有以下用法：
+
+`:Gstatus`: 相当于`git status`,且可以在vim中输出<Enter>直接跳转到文件。
+更多用法参考：`:help fugitive`
+
+[gitv]相当于gitk，是对[fugitive]的功能扩展，安装[gitv]必须先装[fugitive]。
+`:Giv`将打开类似gitk那样的git提交历史记录。
+更多用法参考：`:help gitv`
+
+[gitgutter]当改变文件（替换、删除、添加）可以在行号处实时显示。
 
 ## 其他参考：
 
@@ -186,3 +198,6 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 [easy-align]:https://github.com/junegunn/vim-easy-align
 [unimpaired]:https://github.com/tpope/vim-unimpaired
 [delimitMate]:https://github.com/Raimondi/delimitMate
+[fugitive]:https://github.com/tpope/vim-fugitive
+[gitv]:https://github.com/gregsexton/gitv
+[gitgutter]:https://github.com/airblade/vim-gitgutter

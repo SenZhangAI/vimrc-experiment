@@ -77,6 +77,7 @@ Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 "Plugin 'Shougo/vimproc.vim'
 "Plugin 'Shougo/vimshell.vim'
 Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
+Plugin 'gregsexton/gitv'
 "Plugin 'mattn/webapi-vim'
 Plugin 'airblade/vim-gitgutter', {'name': 'gitgutter'}
 
