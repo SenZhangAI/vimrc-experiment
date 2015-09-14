@@ -67,20 +67,20 @@ F2： 显示/隐藏NERDTree
 
 将光标放在NERDTree中输入`?`即可查看键位，以下为常用键位
 
-键位   | 描述
--------| ---------
-j/k    | 下移/上移一行
-J/K    | 跳到同级的最下/最上
-o/O    | 展开/递归展开节点，也可用打开窗口，但不是新建一个标签
-x/X    | 折叠/递归折叠节点
-go     | 在本窗口中打开一个文件，但不跳过去，相当于**预览功能**
-s/i    | 在左右/上下分屏窗口并打开文件
-t/T    | 在新tab中打开文件，T则是不跳转过去
-:tabo  | 关闭其他tab
-R      | 递归刷新根节点目录
-m      | 打开一个menu，可新建文件或者删除文件
-u      | 进入上一层文件夹
-?      | 查看帮助文档
+键位    | 描述
+------- | ---------
+`j/k`   | 下移/上移一行
+`J/K`   | 跳到同级的最下/最上
+`o/O`   | 展开/递归展开节点，也可用打开窗口，但不是新建一个标签
+`x/X`   | 折叠/递归折叠节点
+`go`    | 在本窗口中打开一个文件，但不跳过去，相当于**预览功能**
+`s/i`   | 在左右/上下分屏窗口并打开文件
+`t/T`   | 在新tab中打开文件，T则是不跳转过去
+`:tabo` | 关闭其他tab
+`R`     | 递归刷新根节点目录
+`m`     | 打开一个menu，可新建文件或者删除文件
+`u`     | 进入上一层文件夹
+`?`     | 查看帮助文档
 
 ### 4. [ctrlp]
 
@@ -133,6 +133,38 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 快捷键设置为`<leader>=`
 对比过tabular和easy-align，easy-align更为出色，尤其在`+=`等符号上，tabular无法准确识别。
 
+### 11.[unimpaired]
+vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换、list切换等待。于是[unimpaired]针对这些，提供统一格式的快捷键，便于切换，详情如下：
+
+| 键位                 | 功能描述       |
+| -------------------- | -------------- |
+| `[a`                 | :previous      |
+| `]a`                 | :next          |
+| `[A`                 | :first         |
+| `]A`                 | :last          |
+| `[b`                 | :bprevious     |
+| `]b`                 | :bnext         |
+| `[B`                 | :bfirst        |
+| `]B`                 | :blast         |
+| `[l`                 | :lprevious     |
+| `]l`                 | :lnext         |
+| `[L`                 | :lfirst        |
+| `]L`                 | :llast         |
+| `[<C-L>`             | :lpfile        |
+| `]<C-L>`             | :lnfile        |
+| `[q`                 | :cprevious     |
+| `]q`                 | :cnext         |
+| `[Q`                 | :cfirst        |
+| `]Q`                 | :clast         |
+| `[<C-Q>`             | :cpfile        |
+| `]<C-Q>`             | :cnfile        |
+| `[t`                 | :tprevious     |
+| `]t`                 | :tnext         |
+| `[T`                 | :tfirst        |
+| `]T`                 | :tlast         |
+
+(Note that <C-Q> only works in a terminal if you disable flow control: stty -ixon)
+
 ## 其他参考：
 
 [原作者说明文档](https://github.com/kaochenlong/eddie-vi://github.com/kaochenlong/eddie-vim2)
@@ -149,3 +181,4 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 [honza/vim-snippets]:https://github.com/honza/vim-snippets
 [Gundo]:sjl.bitbucket.org/gundo.vim
 [easy-align]:https://github.com/junegunn/vim-easy-align
+[unimpaired]:https://github.com/tpope/vim-unimpaired

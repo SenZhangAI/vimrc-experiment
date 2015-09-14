@@ -19,7 +19,7 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized', {'name': 'solarized-color'}
 Plugin 'Yggdroot/indentLine'
 
 " @ Plugin --- [ Source Code Cheacker ]
@@ -43,6 +43,8 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'Shougo/neocomplcache.vim'
 "Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
+Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 
 
 " @ Plugin --- [ Auto Complete ]
@@ -56,7 +58,7 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 Plugin 'tpope/vim-surround', {'name': 'surround'}
 
 "snipmate is depend on vim-addon-mw-utils and tlib_vim
-Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
 Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
 Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 
@@ -76,7 +78,7 @@ Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 "Plugin 'Shougo/vimshell.vim'
 Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
 "Plugin 'mattn/webapi-vim'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter', {'name': 'gitgutter'}
 
 
 " @ Plugin --- [ Code BAT Sreach ]
@@ -84,7 +86,7 @@ Plugin 'rking/ag.vim'
 "Plugin 'thinca/vim-quickrun'
 "Plugin 'dyng/ctrlsf.vim'
 "Plugin 'mklabs/grunt.vim'
-Plugin 'kien/ctrlp.vim', {'name': 'ctrlp'}
+Plugin 'kien/ctrlp.vim'
 
 
 " @ Plugin --- [ Web Development Tools ]
@@ -104,11 +106,11 @@ Plugin 'kien/ctrlp.vim', {'name': 'ctrlp'}
 "Plugin 'StanAngeloff/php.vim'
 
 " @ Plugin --- [ ADV Program Language ]
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
-Plugin 'junegunn/vim-easy-align'
+Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 
 
 
