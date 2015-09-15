@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 "Plugin 'L9'
 
+
 " @ Plugin --- [ Style Custom ]
 Plugin 'bling/vim-airline', {'name': 'airline'}
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
@@ -35,21 +36,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'danro/rename.vim'
 
-" @ Plugin --- [ |Google| Geeks Plugin ]
-Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
-"Plugin 'marijnh/tern_for_vim'
-"Plugin 'Valloric/ListToggle'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'Shougo/neocomplcache.vim'
-"Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
-Plugin 'tpope/vim-repeat', {'name': 'repeat'}
-
 
 " @ Plugin --- [ Auto Complete ]
 Plugin 'Raimondi/delimitMate'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
+Plugin 'SenZhangAI/vim-snippets'
 "Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
 "Plugin 'c9s/perlomni.vim'    " for perl
 "Plugin 'gcmt/wildfire.vim'
@@ -60,6 +52,7 @@ Plugin 'tpope/vim-surround', {'name': 'surround'}
 Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
 Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
 Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
+
 
 " @ Plugin --- [ CWD File Buffer Manager ]
 "Plugin 'Shougo/neomru.vim'
@@ -107,15 +100,28 @@ Plugin 'kien/ctrlp.vim'
 "Plugin 'vim-ruby/vim-ruby', {'name': 'ruby'}
 "Plugin 'cakebaker/scss-syntax.vim'
 
+
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
 Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
+
 
 " @ Plugin --- [ ADV Program Language ]
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
 "Plugin 'vimwiki/vimwiki' "this may use later or never use
+
+
+" @ Plugin --- [ |Google| Geeks Plugin ]
+Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
+"Plugin 'marijnh/tern_for_vim'
+"Plugin 'Valloric/ListToggle'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Shougo/neocomplcache.vim'
+"Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
+Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 
 
 " All of your Plugins must be added before the following line
