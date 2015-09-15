@@ -26,7 +26,10 @@
 ### 2. 安装ctags，配置ctags路径
 初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/tagbar.vim`中，修改为：
 
-### 3. 修改snipMate中的个人信息（非必需）
+### 3. 安装[the_silver_searcher]
+如需使用[ag]，需要安装相应[the_silver_searcher], 针对OS X以及UNIX的安装说明参见[the_silver_searcher]安装说明。
+
+### 4. 修改snipMate中的个人信息（非必需）
 如需要使用snipMate中的相关代码片段，请修改文件`plugin/settings/snipMate.vim`中的作者、邮箱、github账号信息。
 
 ```vim
@@ -187,6 +190,8 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 
 [原作者说明文档](https://github.com/kaochenlong/eddie-vi://github.com/kaochenlong/eddie-vim2)
 
+[ag]:https://github.com/rking/ag.vim
+[the_silver_searcher]:https://github.com/ggreer/the_silver_searcher#installing
 [pathogen]:https://github.com/tpope/vim-pathogen
 [vundle]:https://github.com/VundleVim/Vundle.vim
 [NERDTree]:https://github.com/scrooloose/nerdtree

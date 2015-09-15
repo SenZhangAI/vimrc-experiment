@@ -10,7 +10,7 @@ else
   if executable("ack")
     noremap FF :Ack<SPACE>
   else
-    noremap FF :echo "you need to install ACK or AG first!"<CR>
+    noremap FF :echo "need to install ACK or AG first! e.g. Ubuntu install: apt-get install silversearcher-ag"<CR>
   endif
 endif
 
