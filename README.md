@@ -26,6 +26,9 @@
 ### 2. 安装ctags，配置ctags路径
 初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/tagbar.vim`中，修改为：
 
+### 3. 修改snipMate中的个人信息（非必需）
+如需要使用snipMate中的相关代码片段，请修改文件`plugin/settings/snipMate.vim`中的作者、邮箱、github账号信息。
+
 ```vim
 let Tlist_Ctags_Cmd='/your/path/ctags'
 ```
