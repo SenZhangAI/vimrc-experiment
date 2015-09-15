@@ -105,7 +105,8 @@ Plugin 'kien/ctrlp.vim'
 "Plugin 'elzr/vim-json'
 "Plugin 'StanAngeloff/php.vim'
 "Plugin 'tpope/vim-rails', {'name': 'rails'}
-
+"Plugin 'vim-ruby/vim-ruby', {'name': 'ruby'}
+"Plugin 'cakebaker/scss-syntax.vim'
 
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
@@ -115,6 +116,7 @@ Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
+Plugin 'vimwiki/vimwiki'
 
 
 " All of your Plugins must be added before the following line
