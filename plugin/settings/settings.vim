@@ -44,7 +44,7 @@ catch
 endtry
 
 set nobackup                          " no *~ backup files
-set noswapfile
+"set noswapfile
 set nowritebackup
 set copyindent                        " copy the previous indentation on autoindenting
 set ignorecase                        " ignore case when searching
@@ -108,3 +108,8 @@ autocmd FileType sh,vim,lua,nginx, set shiftwidth=2 softtabstop=2
 
 " MAKEFILE and asm should use tab, not spaces
 autocmd FileType make,asm set noexpandtab shiftwidth=8 softtabstop=0
+
+" set autosave
+set swapfile
+autocmd FocusLost * silent! wa
+autocmd InsertLeave * silent! wa
