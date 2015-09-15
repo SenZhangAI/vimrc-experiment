@@ -11,7 +11,6 @@ call vundle#begin()
 " # Plugins Beginning #
 Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 "Plugin 'L9'
-"Plugin 'tomtom/tlib_vim'
 
 " @ Plugin --- [ Style Custom ]
 Plugin 'bling/vim-airline', {'name': 'airline'}
@@ -116,7 +115,7 @@ Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
-Plugin 'vimwiki/vimwiki'
+"Plugin 'vimwiki/vimwiki' "this may use later or never use
 
 
 " All of your Plugins must be added before the following line
