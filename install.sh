@@ -64,12 +64,32 @@ ln -s $vim_dir/gvimrc $gvim_rc
 # install fonts for airline
 ./bundle/powerline_fonts/install.sh
 
+
+
+# check if ag is installed and choose to insall
+if [ -z $(which ag) ]; then
+  echo "Can't find the silver searcher--Ag, you may need to install it."
+  echo "Windows and Cygwin may not fit to install it."
+#ubuntu
+  if [ -z $(lsb_release -i 2>&1 | grep -i "Ubuntu") ]; then
+    read -p "Your system is Ubuntu, do you want to install it by apt-get?[y/n]" ans
+    if [ "$ans" == "y" ]
+    then
+      sudo apt-get install silversearcher-ag
+    fi
+  fi
+fi
+
+
+
 # remote setting for vim-snippets
 if [ -d ./bundle/vim-snippets ]; then
   cd bundle/vim-snippets
   git remote set-url origin git@github.com:SenZhangAI/vim-snippets.git
   git remote add upstream https://github.com/honza/vim-snippets
 fi
+
+
 
 # installed successfully
 echo ""
