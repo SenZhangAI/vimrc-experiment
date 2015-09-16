@@ -26,7 +26,7 @@
 ### 2. 安装ctags，配置ctags路径
 初次安装需要装ctags，并且，需要将ctags的路径配置到`plugin/settings/tagbar.vim`中，修改为：
 
-### 3. 安装[the_silver_searcher]
+### 3. 安装the_silver_searcher
 如需使用[ag]，需要安装相应[the_silver_searcher], 针对OS X以及UNIX的安装说明参见[the_silver_searcher]安装说明。
 
 ### 4. 修改snipMate中的个人信息（非必需）
@@ -186,6 +186,9 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 
 [gitgutter]当改变文件（替换、删除、添加）可以在行号处实时显示。
 
+### 14. [easygrep]
+可用于快速查找替换，在重构代码时可能比较有用，使用方法参见[easygrep]
+
 ## 其他参考：
 
 [原作者说明文档](https://github.com/kaochenlong/eddie-vi://github.com/kaochenlong/eddie-vim2)
@@ -209,3 +212,4 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 [fugitive]:https://github.com/tpope/vim-fugitive
 [gitv]:https://github.com/gregsexton/gitv
 [gitgutter]:https://github.com/airblade/vim-gitgutter
+[easygrep]:https://github.com/dkprice/vim-easygrep

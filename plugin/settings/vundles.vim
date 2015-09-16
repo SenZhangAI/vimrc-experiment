@@ -80,6 +80,7 @@ Plugin 'rking/ag.vim'
 "Plugin 'dyng/ctrlsf.vim'
 "Plugin 'mklabs/grunt.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'dkprice/vim-easygrep', {'name': 'easygrep'}
 
 
 " @ Plugin --- [ Web Development Tools ]
