@@ -5,7 +5,8 @@ update_vim_snippets() {
   if [ -d ./bundle/vim-snippets ]; then
     echo "update vim-snippets from honza/vim-snippets..."
     cd bundle/vim-snippets
-    git pull upstream master
+    git pull --rebase origin master
+    git pull --rebase upstream master
     git push origin master
     echo "finish"
   fi

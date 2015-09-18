@@ -54,10 +54,10 @@ vim +PluginInstall +qall
 
 # linking to .rc
 ## linking to .vimrc
-ln -s $vim_dir/vimrc $vim_rc
+ln -s $vim_dir/vimrc $vim_rc 2>/dev/null
 
 ## linking to .gvimrc
-ln -s $vim_dir/gvimrc $gvim_rc
+ln -s $vim_dir/gvimrc $gvim_rc 2>/dev/null
 
 
 
@@ -67,15 +67,39 @@ ln -s $vim_dir/gvimrc $gvim_rc
 
 
 # check if ag is installed and choose to insall
-if [ -z $(which ag) ]; then
-  echo "Can't find the silver searcher--Ag, you may need to install it."
-  echo "Windows and Cygwin may not fit to install it."
+find_ag_dir=$(which ag 2>/dev/null)
+
+System_is() {
+  test=$(uname -a 2>/dev/null | grep -i $1)
+  if [ -z "$test" ]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+echo ""
+echo "Check if Ag installed..."
+if [ -z $find_ag_dir ]; then
+  echo "  Can't find the silver searcher---Ag"
+  echo "  Install Ag if you need... Checking your system..."
 #ubuntu
-  if [ -z $(lsb_release -i 2>&1 | grep -i "Ubuntu") ]; then
-    read -p "Your system is Ubuntu, do you want to install it by apt-get?[y/n]" ans
+  if System_is ubuntu; then
+    read -p "    Your system is Ubuntu, would you like to install it by apt-get? [y/n] " ans
     if [ "$ans" == "y" ]
     then
       sudo apt-get install silversearcher-ag
+    fi
+
+  elif System_is cygwin; then
+    read -p "    Your system is Cygwin, would you like to install it by building from source? [y/n] " ans
+    if [ "$ans" == "y" ]
+    then
+      ag_src_tmp_dir=~/Ag_tmp_src
+      git clone https://github.com/ggreer/the_silver_searcher.git $ag_src_tmp_dir
+      cd $ag_src_tmp_dir && ./build.sh && make install
+      cd $vim_dir
+      rm -rf $ag_src_tmp_dir
     fi
   fi
 fi
