@@ -88,7 +88,7 @@ Plugin 'dkprice/vim-easygrep', {'name': 'easygrep'}
 "Plugin 'othree/javascript-libraries-syntax.vim'
 "Plugin 'othree/yajs.vim'
 "Plugin 'chrisbra/Colorizer'
-"Plugin 'ap/vim-css-color'
+Plugin 'ap/vim-css-color'
 "Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'othree/html5.vim'
 "Plugin 'othree/html5-syntax.vim'
