@@ -81,18 +81,21 @@ System_is() {
 echo ""
 echo "Check if Ag installed..."
 if [ -z $find_ag_dir ]; then
-  echo "  Can't find the silver searcher---Ag"
-  echo "  Install Ag if you need... Checking your system..."
+  echo " * Can't find the silver searcher---Ag"
+  echo " * Install Ag if you need... Checking your system..."
 #ubuntu
   if System_is ubuntu; then
-    read -p "    Your system is Ubuntu, would you like to install it by apt-get? [y/n] " ans
+    read -p "  > Your system is Ubuntu, would you like to auto-install it by apt-get? [y/n] " ans
     if [ "$ans" == "y" ]
     then
       sudo apt-get install silversearcher-ag
     fi
 
   elif System_is cygwin; then
-    read -p "    Your system is Cygwin, would you like to install it by building from source? [y/n] " ans
+    read -p "  > Your system is Cygwin, would you like to auto-install it from source? [y/n] " ans
+    echo    "   - the related packages:[automake] [pkg-config] [libpcre-devel] [liblzma-dev] MUST installed first."
+    echo "      - Ag will not by installed successly if these packages havn't installed."
+    read -p "   - have you INSTALLED these packages? [y/n]"  ans
     if [ "$ans" == "y" ]
     then
       ag_src_tmp_dir=~/Ag_tmp_src
@@ -110,7 +113,7 @@ fi
 if [ -d ./bundle/vim-snippets ]; then
   cd bundle/vim-snippets
   git remote set-url origin git@github.com:SenZhangAI/vim-snippets.git
-  git remote add upstream https://github.com/honza/vim-snippets
+  git remote add upstream https://github.com/honza/vim-snippets 2>/dev/null
 fi
 
 
