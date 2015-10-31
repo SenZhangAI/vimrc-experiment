@@ -1,4 +1,3 @@
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
 let NERDTreeChDirMode=2
 let NERDTreeMouseMode=2
 let g:nerdtree_tabs_focus_on_files=1
