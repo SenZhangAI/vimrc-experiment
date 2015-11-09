@@ -68,7 +68,6 @@ let Tlist_Ctags_Cmd='/your/path/ctags'
 
 本配置中修改了两个键位：
 
-F2： 显示/隐藏NERDTree
 <leader>r: 进入NERDTree
 
 将光标放在NERDTree中输入`?`即可查看键位，以下为常用键位
@@ -132,7 +131,7 @@ autocmd FileType cpp,c,h,hpp,cc,cxx nested :call tagbar#autoopen(0)
 ### 9. [Gundo]
 每次将缓存写入文件时，记录历史，并提供修改的diff，就类似与一个简单的版本回退功能。
 具体参见[Gundo]说明。
-快捷键设置为`<F5>`
+快捷键设置为`<F3>`
 
 ### 10.[easy-align]
 用于代码中的`=`, `,`, `:`,以及markdown表格中常用的`|`等字符的自动对齐，使得代码更为美观，使用方法参见[easy-align]
@@ -188,6 +187,9 @@ vim中经常会有上下切换的快捷键，种类繁多，包括buffer切换�
 
 ### 14. [easygrep]
 可用于快速查找替换，在重构代码时可能比较有用，使用方法参见[easygrep]
+
+## hot-keys
+
 
 ## 其他参考：
 
