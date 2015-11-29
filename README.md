@@ -28,6 +28,7 @@
 
 ### 3. 安装the_silver_searcher
 如需使用[ag]，需要安装相应[the_silver_searcher], 针对OS X以及UNIX的安装说明参见[the_silver_searcher]安装说明。
+对于Cygwin需要首先安装**gcc**,**make**,**automake**,**pkg-config**,**libpcre-devel**,**liblzma-dev**。
 
 ### 4. 修改snipMate中的个人信息（非必需）
 如需要使用snipMate中的相关代码片段，请修改文件`plugin/settings/snipMate.vim`中的作者、邮箱、github账号信息。
