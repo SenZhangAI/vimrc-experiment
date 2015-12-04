@@ -120,7 +120,9 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 "Plugin 'marijnh/tern_for_vim'
 "Plugin 'Valloric/ListToggle'
 "Plugin 'Valloric/YouCompleteMe'
-"Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 "Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
