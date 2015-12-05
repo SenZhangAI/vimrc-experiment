@@ -104,7 +104,7 @@ autocmd FileType c,cpp,cc set cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,g0,p
 autocmd FileType html,xhtml,css,xml,xslt, set shiftwidth=2 softtabstop=2
 
 " two space indentation for some files
-autocmd FileType sh,vim,lua,nginx, set shiftwidth=2 softtabstop=2
+autocmd FileType zsh,sh,vim,lua,nginx, set shiftwidth=2 softtabstop=2
 
 " MAKEFILE and asm should use tab, not spaces
 autocmd FileType make,asm set noexpandtab shiftwidth=8 softtabstop=0
