@@ -21,6 +21,7 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
 Plugin 'altercation/vim-colors-solarized', {'name': 'solarized-color'}
 Plugin 'Yggdroot/indentLine'
+"Plugin 'natnanaeikane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
 
 " @ Plugin --- [ Source Code Cheacker ]
