@@ -114,6 +114,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
 "Plugin 'vimwiki/vimwiki' "this may use later or never use
+"Plugin 'itchyny/calender.vim'  " A calender application for Vim
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
