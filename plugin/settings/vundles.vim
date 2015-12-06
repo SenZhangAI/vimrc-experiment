@@ -57,14 +57,12 @@ Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 
 
 " @ Plugin --- [ CWD File Buffer Manager ]
-"Plugin 'Shougo/neomru.vim'
 "Plugin 'Shougo/unite.vim'
 "Plugin 'Shougo/unite-outline'
 "Plugin 'Shougo/unite-session'
 "Plugin 'Shougo/vimfiler.vim'
 "Plugin 'tsukkee/unite-tag'
 "Plugin 'thinca/vim-unite-history'
-"Plugin 'yegappan/mru'
 
 
 " @ Plugin --- [ Git && Shell Tools ]
