@@ -79,7 +79,7 @@ Plugin 'rking/ag.vim'
 "Plugin 'thinca/vim-quickrun'
 "Plugin 'dyng/ctrlsf.vim'
 "Plugin 'mklabs/grunt.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dkprice/vim-easygrep', {'name': 'easygrep'}
 
 
