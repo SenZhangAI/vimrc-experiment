@@ -33,7 +33,7 @@ Plugin 'scrooloose/syntastic'
 " NERDTree Plugins Collections
 Plugin 'scrooloose/nerdtree'
 "Plugin 'ryanoasis/vim-webdevicons'
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 "Plugin 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'danro/rename.vim'
