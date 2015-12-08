@@ -74,7 +74,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter', {'name': 'gitgutter'}
 
 
-" @ Plugin --- [ Code BAT Sreach ]
+" @ Plugin --- [ Code BAT Search ]
 Plugin 'rking/ag.vim'
 "Plugin 'thinca/vim-quickrun'
 "Plugin 'dyng/ctrlsf.vim'
@@ -111,8 +111,6 @@ Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
-Plugin 'vimwiki/vimwiki'
-Plugin 'itchyny/calendar.vim'  " A calender application for Vim
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
@@ -126,6 +124,9 @@ Plugin 'Shougo/neosnippet-snippets'
 "Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
+Plugin 'vimwiki/vimwiki'
+Plugin 'itchyny/calendar.vim'  " A calender application for Vim
+Plugin 'a.vim'
 
 
 " All of your Plugins must be added before the following line
