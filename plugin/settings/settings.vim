@@ -33,16 +33,6 @@ set ttyfast                           " send more chars while redrawing
 set lazyredraw
 
 
-syntax on                             " syntax highlight
-set hlsearch                          " search highlighting
-set incsearch                         " incremental search
-syntax enable
-set t_Co=256
-try
-  colorscheme Tomorrow-Night-Bright
-catch
-endtry
-
 set nobackup                          " no *~ backup files
 "set noswapfile
 set nowritebackup
