@@ -1,4 +1,3 @@
-nmap <F4> :TagbarToggle<cr>
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=35
 let g:tagbar_indent=1

@@ -9,6 +9,3 @@ let g:vimwiki_list = [{'path': '~/my_vimwiki/vimwiki',
       \ 'path_html': '~/my_vimwiki/vimwiki_html',
       \ 'template_path': '~/my_vimwiki/vimwiki/template',
       \ 'template_default':"default.tpl"}]
-
-
-nmap <Leader>tt :VimwikiToggleListItem<CR>
