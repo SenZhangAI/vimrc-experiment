@@ -7,10 +7,6 @@
 
 execute pathogen#infect()
 
-" custom key
-" add a new line without entering insert mode
-noremap <CR> o<Esc>
-
 " map backspce to delete a character
 noremap <BS> X
 
