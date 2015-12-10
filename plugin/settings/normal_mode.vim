@@ -3,8 +3,8 @@
 " =================
 
 " identation
-nmap <TAB> v>
-nmap <S-TAB> v<
+nmap > v>
+nmap < v<
 
 "this will cause conflict with snippetmate
 "vmap <TAB> >gv
