@@ -126,7 +126,8 @@ Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'  " A calender application for Vim
-Plugin 'a.vim'
+Plugin 'vim-scripts/a.vim'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 
 
 " All of your Plugins must be added before the following line
