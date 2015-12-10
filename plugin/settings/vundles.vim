@@ -111,6 +111,7 @@ Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
+Plugin 'asins/vimcdoc'
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
