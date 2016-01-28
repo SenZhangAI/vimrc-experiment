@@ -5,6 +5,7 @@
 " 1. base_mapping
 " 2. advance_mapping
 " 3. plugins_mapping
+" 4. custom plugins hotkey
 " 4. key map timeouts
 " Note: some plugins mapping are define near the plugins setting.
 " and default keymaps of the plugins are not included.
@@ -15,8 +16,8 @@
     noremap <BS> X
 
   " map ctrl+c and ctrl+v
-    noremap <C-c> y
-    noremap <C-v> P
+    "noremap <C-c> y
+    "noremap <C-v> P
 
   " navigating for long lines
     map <UP> gk
@@ -204,6 +205,78 @@
 " } end plugins_mapping
 
 
+" custom_plugins {
+" auto_run {
+" Description: default map <F5> to auto run single file
+"
+" Python {
+if executable("python")
+  autocmd BufRead,BufNewFile *.py map <F5> :% w !python<CR>
+else
+  autocmd BufRead,BufNewFile *.py map <F5> :echo "you need to install Python first!"<CR>
+endif
+" } end Python
+
+" dot {
+" dot file in graphviz
+if executable("dot")
+
+  if executable("explorer") "use in Windows or Cygwin
+    autocmd BufRead,BufNewFile *.dot map <F5> :!dot -Tpng -o %:r.png % && explorer %:r.png<CR><CR>
+  elseif executable("gnome-open") "use in gnome
+    autocmd BufRead,BufNewFile *.dot map <F5> :!dot -Tpng -o %:r.png % && gnome-open %:r.png<CR><CR>
+  elseif executable("xdg-open") "use in gnome or kde
+    autocmd BufRead,BufNewFile *.dot map <F5> :!dot -Tpng -o %:r.png % && xdg-open %:r.png<CR><CR>
+  else "no quick-view for graph
+    autocmd BufRead,BufNewFile *.dot map <F5> :!dot -Tpng -o %:r.png % <CR>
+  endif
+
+else
+  autocmd BufRead,BufNewFile *.dot map <F5> :echo "command: dot not found. \n you may need to install graphviz first"<CR>
+endif
+" } end dot
+
+" CoffeeScript {
+if executable("coffee")
+  autocmd BufRead,BufNewFile *.coffee map <F5> :CoffeeRun<CR>
+else
+  autocmd BufRead,BufNewFile *.coffee map <F5> :echo "you need to install CoffeeScript first!"<CR>
+endif
+" end CoffeeScript
+
+" VimScript {
+autocmd BufRead,BufNewFile *.vim map <F5> :source %<CR>:echon "script reloaded!"<CR>
+" } end VimScript
+
+" Ruby {
+if executable("ruby")
+  autocmd BufRead,BufNewFile *.rb map <F5> :% w !ruby -w<CR>
+else
+  autocmd BufRead,BufNewFile *.rb map <F5> :echo "you need to install Ruby first!"<CR>
+endif
+" } end Ruby
+
+" PHP {
+if executable("php")
+  autocmd BufRead,BufNewFile *.php map <F5> :% w !php<CR>
+else
+  autocmd BufRead,BufNewFile *.php map <F5> :echo "you need to install PHP first!"<CR>
+endif
+" end PHP
+
+" perl {
+if executable("perl")
+  autocmd BufRead,BufNewFile *.pl map <F5> :% w !perl %<CR>
+else
+  autocmd BufRead,BufNewFile *.pl map <F5> :echo "you need to install Perl first!"<CR>
+end
+" end perl
+
+" } end auto_run
+" } end custom_plugins
+
+
+
 " key map timeouts {
 
   " By default Vim will only wait 1 second for each keystroke in a mapping.
@@ -228,3 +301,4 @@
   " timeoutlent (default: 1000 = 1 second, which is sluggish) is used.
   "set ttimeoutlen=100
 " } end key map timeouts
+"
