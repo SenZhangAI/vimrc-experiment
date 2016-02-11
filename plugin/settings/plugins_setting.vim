@@ -127,15 +127,27 @@ let g:surround_61="<%= \r %>"  " =
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
+let g:syntastic_error_symbol = '✗'      "set error or warning signs
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_check_on_open = 1
+let g:syntastic_enable_highlighting = 0
+" pyflakes is faster then pylint
+"let g:syntastic_python_checkers=['pyflakes']
+"let g:syntastic_javascript_checkers=['jsl','jshint']
+"let g:syntastic_html_checkers=['tidy','jshint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_balloons = 1
 
 " C++ settings
+let g:syntastic_cpp_include_dirs=['/usr/include']
+let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_compiler_options = '-std=c++11' "GCC options
+"let g:syntastic_cpp_compiler = 'clang++'
+"let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "Clang opthons(not good for cygwin)
 " } end syntastic
 
 " tagbar {
