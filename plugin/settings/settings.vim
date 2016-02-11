@@ -10,6 +10,8 @@ set nolist
 set hidden
 set linespace=0
 set cursorline
+"set foldmethod=indent
+set foldmethod=syntax
 set nofoldenable
 set number
 set numberwidth=6
