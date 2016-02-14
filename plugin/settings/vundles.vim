@@ -14,7 +14,8 @@ Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 
 
 " @ Plugin --- [ Style Custom ]
-Plugin 'bling/vim-airline', {'name': 'airline'}
+Plugin 'vim-airline/vim-airline', {'name': 'airline'}
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
