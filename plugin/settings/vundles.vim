@@ -23,6 +23,7 @@ Plugin 'altercation/vim-colors-solarized', {'name': 'solarized-color'}
 Plugin 'Yggdroot/indentLine'
 "Plugin 'natnanaeikane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
+Plugin 'kshenoy/vim-signature'
 
 " @ Plugin --- [ Source Code Cheacker ]
 Plugin 'sjl/gundo.vim'
