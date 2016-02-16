@@ -10,6 +10,11 @@
 " Note: some plugins mapping are define near the plugins setting.
 " and default keymaps of the plugins are not included.
 
+if ( exists('g:loaded_custom_hotkey') )
+	finish
+endif
+let g:loaded_custom_hotkey= 1
+
 " base_mapping {
 
   " map backspce to delete a character

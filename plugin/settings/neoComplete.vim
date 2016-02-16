@@ -1,4 +1,11 @@
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+
+
+if ( exists('g:loaded_neoComplete_setting') )
+	finish
+endif
+let g:loaded_neoComplete_setting = 1
+
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.

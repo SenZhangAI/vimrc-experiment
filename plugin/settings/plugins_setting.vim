@@ -4,6 +4,11 @@
 " ======================================
 " Description: This is the recommented plugins setting:
 
+if ( exists('g:loaded_plugins_setting') )
+	finish
+endif
+let g:loaded_plugins_setting = 1
+
 " Ag {
 " if silver searcher is installed, use `ag` instead of `ack`
 " for more information, please visit https://github.com/ggreer/the_silver_searcher
@@ -77,6 +82,11 @@ let g:ctrlp_match_window_reversed=0
 let g:ctrlp_mruf_max=500
 let g:ctrlp_follow_symlinks=1
 " } end ctrlp
+
+" gitgutter {
+let g:gitgutter_on_bufenter = 0
+"let g:gundo_help=0
+" } end gitgutter
 
 " Gundo {
 let g:gundo_preview_height = 20

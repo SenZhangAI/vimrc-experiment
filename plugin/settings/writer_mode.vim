@@ -1,6 +1,12 @@
 " toggle between working mode and writter mode
 " font size change only work for GUI-version Vim
 
+
+if ( exists('g:loaded_writer_mode') )
+	finish
+endif
+let g:loaded_writer_mode = 1
+
 function! WriterModeOn()
   colorscheme default
   set background=light

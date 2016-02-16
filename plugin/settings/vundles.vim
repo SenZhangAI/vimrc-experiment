@@ -1,3 +1,9 @@
+
+if ( exists('g:loaded_vundle_setting') )
+	finish
+endif
+let g:loaded_vundle_setting = 1
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -35,7 +41,7 @@ Plugin 'scrooloose/syntastic'
 " NERDTree Plugins Collections
 Plugin 'scrooloose/nerdtree'
 "Plugin 'ryanoasis/vim-webdevicons'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'Xuyuanp/nerdtree-git-plugin' "remove it! it will make vim very slow
 "Plugin 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'danro/rename.vim'

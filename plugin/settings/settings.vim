@@ -1,3 +1,9 @@
+
+if ( exists('g:loaded_custom_setting') )
+	finish
+endif
+let g:loaded_custom_setting = 1
+
 set nocompatible                      " not compatible with the old-fashion vi mode
 set backspace=2                       " allow backspacing over everything in insert nc >kkmode
 set history=1000                      " keep 1000 lines of command line history

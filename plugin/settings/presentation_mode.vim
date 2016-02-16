@@ -3,6 +3,11 @@
 "
 " font size change only work for GUI-version Vim
 
+if ( exists('g:loaded_presentation_mode') )
+	finish
+endif
+let g:loaded_presentation_mode= 1
+
 function! PresentationModeOn()
   set background=light
 
