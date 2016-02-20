@@ -140,6 +140,10 @@ let g:loaded_custom_hotkey= 1
     let g:SuperTabContextDefaultCompletionType="<c-n>"
   " } end SuperTab
 
+  " vim-autoformat {
+    noremap <leader>fm :Autoformat<CR>
+  " } end vim-autoformat
+
   " vimwiki {
     " solve the key conflict <Ctrl><SPACE> with Input Method
     nmap <Leader>tt :VimwikiToggleListItem<CR>

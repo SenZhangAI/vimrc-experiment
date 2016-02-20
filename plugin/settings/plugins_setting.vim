@@ -190,6 +190,11 @@ if version >= 603
 endif
 " } end vimcdoc
 
+" vim-autoformat {
+let g:formatdef_astyle_google_cpp = '"astyle --mode=c --style=ansi -pcH".(&expandtab ? "s".shiftwidth() : "t")'
+let g:formatters_cpp = ['clangformat', 'astyle_google_cpp']
+" } end vim-autoformat
+
 " vimwiki {
 " @see https://github.com/hotoo/vimrc/blob/master/vimrc
 " @see https://github.com/ktmud/dotfiles/blob/master/.vimrc

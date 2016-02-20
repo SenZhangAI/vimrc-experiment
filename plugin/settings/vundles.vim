@@ -31,6 +31,7 @@ Plugin 'Yggdroot/indentLine'
 "Plugin 'natnanaeikane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
 Plugin 'kshenoy/vim-signature'
+Plugin 'Chiel92/vim-autoformat'
 
 " @ Plugin --- [ Source Code Cheacker ]
 Plugin 'sjl/gundo.vim'
