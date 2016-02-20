@@ -141,7 +141,7 @@ let g:loaded_custom_hotkey= 1
   " } end SuperTab
 
   " vim-autoformat {
-    noremap <leader>fm :Autoformat<CR>
+    noremap <leader>af :Autoformat<CR>
   " } end vim-autoformat
 
   " vimwiki {
