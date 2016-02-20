@@ -11,7 +11,7 @@
 " and default keymaps of the plugins are not included.
 
 if ( exists('g:loaded_custom_hotkey') )
-	finish
+  finish
 endif
 let g:loaded_custom_hotkey= 1
 
@@ -38,13 +38,11 @@ let g:loaded_custom_hotkey= 1
   " identation
     nmap > v><ESC>
     nmap < v<<ESC>
-    nmap <Tab> v><ESC>
-    nmap <S-Tab> v<<ESC>
     vnoremap < <gv
     vnoremap > >gv
 
   " cancel searched highlight
-    noremap <CR> :nohlsearch<CR>
+    nnoremap <CR> :nohlsearch<CR>
 
 " } end base_mapping
 

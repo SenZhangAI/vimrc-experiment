@@ -5,7 +5,7 @@
 " Description: This is the recommented plugins setting:
 
 if ( exists('g:loaded_plugins_setting') )
-	finish
+  finish
 endif
 let g:loaded_plugins_setting = 1
 
@@ -191,9 +191,19 @@ endif
 " } end vimcdoc
 
 " vim-autoformat {
-let g:formatdef_astyle_google_cpp = '"astyle --mode=c --style=ansi -pcH".(&expandtab ? "s".shiftwidth() : "t")'
-let g:formatters_cpp = ['clangformat', 'astyle_google_cpp']
+let g:formatdef_astyle_google_cpp = '"astyle --mode=c --style=google -pcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
+"let g:formatters_cpp = ['clangformat', 'astyle_cpp']
+let g:formatters_cpp = ['astyle_google_cpp']
 " } end vim-autoformat
+
+" delimitMate {
+let delimitMate_autoclose = 1
+let delimitMate_jump_expansion = 1
+let delimitMate_expand_space = 1
+let delimitMate_expand_cr = 2
+let delimitMate_expand_inside_quotes = 1
+imap <leader>g <Plug>delimitMateJumpMany
+" } delimitMate
 
 " vimwiki {
 " @see https://github.com/hotoo/vimrc/blob/master/vimrc
