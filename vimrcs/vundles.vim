@@ -54,9 +54,9 @@ Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
 Plugin 'tpope/vim-surround', {'name': 'surround'}
 
 "snipmate is depend on vim-addon-mw-utils and tlib_vim
-Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
-Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
-Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
+"Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
+"Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
+"Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
 
 
 " @ Plugin --- [ CWD File Buffer Manager ]
