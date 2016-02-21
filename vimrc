@@ -4,14 +4,14 @@
 
 execute pathogen#infect()
 
-source ./vimrcs/vundles.vim
-source ./vimrcs/settings.vim
-source ./vimrcs/plugins_setting.vim
-source ./vimrcs/neoComplete.vim
-source ./vimrcs/custom_hotkey.vim
-source ./vimrcs/snipMate.vim
-source ./vimrcs/presentation_mode.vim
-source ./vimrcs/writer_mode.vim
+source ~/.vim/vimrcs/vundles.vim
+source ~/.vim/vimrcs/settings.vim
+source ~/.vim/vimrcs/plugins_setting.vim
+source ~/.vim/vimrcs/neoComplete.vim
+source ~/.vim/vimrcs/custom_hotkey.vim
+source ~/.vim/vimrcs/snipMate.vim
+source ~/.vim/vimrcs/presentation_mode.vim
+source ~/.vim/vimrcs/writer_mode.vim
 
 syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
