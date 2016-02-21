@@ -20,7 +20,6 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
-Plugin 'altercation/vim-colors-solarized', {'name': 'solarized-color'}
 Plugin 'Yggdroot/indentLine'
 "Plugin 'natnanaeikane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
@@ -28,7 +27,7 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'Chiel92/vim-autoformat'
 
 " @ Plugin --- [ Source Code Cheacker ]
-Plugin 'sjl/gundo.vim'
+"Plugin 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 
@@ -36,7 +35,7 @@ Plugin 'scrooloose/syntastic'
 " NERDTree Plugins Collections
 Plugin 'scrooloose/nerdtree'
 "Plugin 'ryanoasis/vim-webdevicons'
-"Plugin 'Xuyuanp/nerdtree-git-plugin' "remove it! it will make vim very slow
+"Plugin 'Xuyuanp/nerdtree-git-plugin' "this plugin may slowdown vim in some situation
 "Plugin 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'danro/rename.vim'
@@ -129,7 +128,7 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 Plugin 'vimwiki/vimwiki'
-Plugin 'itchyny/calendar.vim'  " A calender application for Vim
+"Plugin 'itchyny/calendar.vim'  " A calender application for Vim
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 
