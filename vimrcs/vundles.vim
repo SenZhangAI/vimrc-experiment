@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 
 
 " @ Plugin --- [ Style Custom ]
+Plugin 'godlygeek/csapprox'
 Plugin 'vim-airline/vim-airline', {'name': 'airline'}
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
