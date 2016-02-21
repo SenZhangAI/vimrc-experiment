@@ -199,8 +199,9 @@ let delimitMate_balance_matchpairs = 1
 au FileType c,cpp,java let b:delimitMate_insert_eol_marker = 2
 au FileType c,cpp,java let b:delimitMate_eol_marker = ";"
 imap <leader>g <Plug>delimitMateJumpMany
-imap <expr> <CR> pumvisible() ? "\<C-Y>" : "<Plug>delimitMateCR"
+" map for <CR> has been set with delimitMateCR and NeoComplete
 imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
+imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"
 " } delimitMate
 
 " vimwiki {

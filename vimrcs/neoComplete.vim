@@ -44,9 +44,10 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y> neocomplete#close_popup()
 " Close popup by <Space>.
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
-imap <silent><expr><C-k> neosnippet#expandable() ?
+imap <expr><CR> neosnippet#expandable() ?
       \ "\<Plug>(neosnippet_expand_or_jump)" : (pumvisible() ?
-      \ "\<C-e>" : "\<Plug>(neosnippet_expand_or_jump)")
+      \ "\<C-y>" : (neosnippet#jumpable() ?
+      \ "\<Plug>(neosnippet_expand_or_jump)" : "<Plug>delimitMateCR"))
 smap <TAB> <Right><Plug>(neosnippet_jump_or_expand)
 " For cursor moving in insert mode(Not recommended)
 "inoremap <expr><Left>  neocomplete#close_popup() . "\<Left>"
