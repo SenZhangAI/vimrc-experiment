@@ -161,8 +161,8 @@ let g:tagbar_indent=1
 let g:tagbar_autopreview=1
 
 " choose when need
-let g:tagbar_iconchars = ['▶', '▼']  "(default on Linux and Mac OS X)
-"let g:tagbar_iconchars = ['▸', '▾']
+"let g:tagbar_iconchars = ['▶', '▼']  "(default on Linux and Mac OS X)
+let g:tagbar_iconchars = ['▸', '▾']
 "let g:tagbar_iconchars = ['▷', '◢']
 "let g:tagbar_iconchars = ['+', '-']  "(default on Windows)
 
@@ -200,6 +200,7 @@ au FileType c,cpp,java let b:delimitMate_insert_eol_marker = 2
 au FileType c,cpp,java let b:delimitMate_eol_marker = ";"
 imap <leader>g <Plug>delimitMateJumpMany
 imap <expr> <CR> pumvisible() ? "\<C-Y>" : "<Plug>delimitMateCR"
+imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
 " } delimitMate
 
 " vimwiki {
