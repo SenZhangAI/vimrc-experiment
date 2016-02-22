@@ -87,18 +87,18 @@ filetype plugin on                    " enable filetype-specific plugins
 " for C-like programming where comments have explicit end character,
 " if starting a new line in the middle of a comment automatically add comment
 " character
-autocmd FileType c,cpp,java set formatoptions+=ro
+autocmd FileType c,cpp,java setlocal formatoptions+=ro
 "C/C++ format settings
-autocmd FileType c,cpp,cc set cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,g0,p2,t0,+2s,(0,U1,ks
+autocmd FileType c,cpp,cc setlocal cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,g0,p2,t0,+2s,(0,U1,ks
 
 " for Indentation set to be 2 to get faster
-autocmd FileType html,xhtml,css,xml,xslt, set shiftwidth=2 softtabstop=2
+autocmd FileType html,xhtml,css,xml,xslt, setlocal shiftwidth=2 softtabstop=2
 
 " two space indentation for some files
-autocmd FileType zsh,sh,vim,lua,nginx, set shiftwidth=2 softtabstop=2
+autocmd FileType zsh,sh,vim,lua,nginx, setlocal shiftwidth=2 softtabstop=2
 
 " MAKEFILE and asm should use tab, not spaces
-autocmd FileType make,asm set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType make,asm setlocal noexpandtab shiftwidth=8 softtabstop=0
 
 " set autosave
 set swapfile
