@@ -69,7 +69,6 @@ Plugin 'tpope/vim-surround', {'name': 'surround'}
 
 
 " @ Plugin --- [ Git && Shell Tools ]
-"Plugin 'Shougo/vimproc.vim'
 "Plugin 'Shougo/vimshell.vim'
 Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
 Plugin 'gregsexton/gitv'
@@ -125,6 +124,10 @@ Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+
+"Below Plugin vim-marching can combined with neocomplete, with need vimproc
+Plugin 'Shougo/vimproc.vim'
+Plugin 'osyo-manga/vim-marching'
 
 Plugin 'ervandew/supertab'
 "Plugin 'fatih/vim-go'
