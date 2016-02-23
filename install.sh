@@ -108,7 +108,27 @@ if [ -z $find_ag_dir ]; then
   fi
 fi
 
+# generate cygwin_rebase_vimproc.bat file
+if System_is cygwin; then
+  dash_dir=$(cygpath -w /bin)
+  echo '@echo off
 
+'$dash_dir'\dash.exe  -c '\''/usr/bin/rebase -s '$vim_dir'/bundle/vimproc.vim/lib/*.dll'\''
+
+echo=
+echo ////////////////////////////////////////////////////
+echo if ERROR happened:
+echo     1. the path of cygwin/bin/ or the dll file may wrong
+echo     2. Cygwin is still run now.
+echo     3. the bat file or not run as administrator.
+echo you may need to check it and install yourself :(
+echo=
+echo you can delete this file now.
+echo ////////////////////////////////////////////////////
+
+pause
+' > ./cygwin_rebase_vimproc.bat
+fi
 
 # remote setting for vim-snippets
 if [ -d ./bundle/vim-snippets ]; then
