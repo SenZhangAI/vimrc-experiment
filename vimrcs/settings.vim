@@ -89,7 +89,7 @@ filetype plugin on                    " enable filetype-specific plugins
 " character
 autocmd FileType c,cpp,java setlocal formatoptions+=ro
 "C/C++ format settings
-autocmd FileType c,cpp,cc setlocal cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,g0,p2,t0,+2s,(0,U1,ks
+autocmd FileType c,cpp,cc setlocal cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,l1,g0,p2,t0,+2s,(0,U1,ks
 
 " for Indentation set to be 2 to get faster
 autocmd FileType html,xhtml,css,xml,xslt, setlocal shiftwidth=2 softtabstop=2
