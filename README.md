@@ -36,6 +36,9 @@
 ```vim
 let Tlist_Ctags_Cmd='/your/path/ctags'
 ```
+### 5. Cygwin环境在安装vimproc的问题
+在Cygwin环境中，对于插件vimproc，新加入的dll可能需要rebase，否则其执行fork时可能出现bug，
+参见[issue](https://github.com/Shougo/vimproc.vim/issues/241)
 
 ## 插件介绍
 
