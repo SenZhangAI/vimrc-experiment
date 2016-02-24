@@ -80,6 +80,9 @@
   " and ask which one to jump to
     nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
+  " Map <Leader>m to auto make and run
+    nmap <Leader>m :wa<CR>:make:cw<CR>
+
 " } end advance_mapping
 
 
