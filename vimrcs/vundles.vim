@@ -21,8 +21,8 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
-Plugin 'Yggdroot/indentLine'
-"Plugin 'natnanaeikane/vim-indent-guides'    "another indentLine style
+"Plugin 'Yggdroot/indentLine'
+Plugin 'nathanaelkane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'Chiel92/vim-autoformat'
@@ -46,7 +46,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
-Plugin 'SenZhangAI/vim-snippets'
+"Plugin 'SenZhangAI/vim-snippets'
 Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
 "Plugin 'c9s/perlomni.vim'    " for perl
 "Plugin 'gcmt/wildfire.vim'

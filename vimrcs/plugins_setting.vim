@@ -87,21 +87,37 @@ let g:gundo_preview_height = 20
 let g:gundo_help=0
 " } end Gundo
 
-" indentLine {
-" Vim
-let g:indentline_color_term = 239
-"Gvim
-let g:indentline_color_gui = '#A4E57E'
-" none X terminal
-let g:indentline_color_tty_light = 7 " default: 4
-let g:indentline_color_dark = 1 " default: 2
-" } end indentLine
+""indentLine {
+"" Vim
+"let g:indentline_color_term = 239
+""Gvim
+"let g:indentline_color_gui = '#A4E57E'
+"" none X terminal
+"let g:indentline_color_tty_light = 7 " default: 4
+"let g:indentline_color_dark = 1 " default: 2
+"" } end indentLine
+
+" indent-guides {
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+
+
+" terminal
+if !has("gui_running")
+  let g:indent_guides_auto_colors = 0
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=235
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=239
+end
+" } end indent-guides
 
 " markdown {
 " LaTex math: support $x^2$, $$x^2$$ syntax
 let g:vim_markdown_math=1
 " Highlight YAML frontmatter as used by jekyll
 let g:vim_markdown_frontmatter=1
+let g:vim_markdown_conceal = 0
 " } end markdown
 
 " NERDTree {
