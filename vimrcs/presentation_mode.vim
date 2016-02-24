@@ -20,6 +20,7 @@ function! PresentationModeOn()
     colorscheme solarized
     set background=light
     "let g:airline_theme='luna'
+    exec "RainbowToggleOn"
   end
 endfunction
 
@@ -42,6 +43,7 @@ function! PresentationModeOff()
     colorscheme solarized
     set background=dark
     "let g:airline_theme='luna'
+    exec "RainbowToggleOn"
   end
 endfunction
 
