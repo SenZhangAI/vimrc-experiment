@@ -40,6 +40,10 @@
   " cancel searched highlight
     nnoremap <Leader>/ :nohlsearch<CR>
 
+  " use arrow to shift buffer
+    noremap <left> :bp<CR>
+    noremap <right> :bn<CR>
+
 " } end base_mapping
 
 

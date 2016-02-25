@@ -109,7 +109,8 @@ autocmd FileType c,cpp,java setlocal formatoptions+=ro
 autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,N-s,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
 
 " for Indentation set to be 2 to get faster
-autocmd FileType html,xhtml,css,xml,xslt, setlocal shiftwidth=2 softtabstop=2
+autocmd FileType ruby,javascript,html,xhtml,css,xml,xslt,
+      \setlocal tabstop=2 shiftwidth=2 softtabstop=2 autoindent
 
 " two space indentation for some files
 autocmd FileType zsh,sh,vim,lua,nginx, setlocal shiftwidth=2 softtabstop=2
@@ -124,3 +125,19 @@ autocmd InsertLeave * silent! wa
 
 " set cursor to last position when reopen
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+
+" 设置标记一列的背景颜色和数字一行颜色一致
+hi! link SignColumn   LineNr
+hi! link ShowMarksHLl DiffAdd
+hi! link ShowMarksHLu DiffChange
+
+" for error highlight，防止错误整行标红导致看不清
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
