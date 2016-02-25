@@ -27,6 +27,7 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'luochen1990/rainbow'
+Plugin 'zhaocai/GoldenView.Vim'
 
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation

@@ -132,12 +132,8 @@
   " } end NERDTree
 
   " Tagbar {
-    nmap <F3> :TagbarToggle<cr>
+    nmap <F3> :TagbarToggle<CR>
   " } end Tagbar
-
-  " toggle wrap {
-    nnoremap <F4> :set list! list?<CR>
-  " } end toggle wrap
 
   " numbers {
     " relative/absolute numbering
@@ -156,6 +152,26 @@
     " can make open file quicker
     nnoremap <F9> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
   " } end toggle syntax
+
+  " toggle wrap {
+    nnoremap <F10> :set list! list?<CR>
+  " } end toggle wrap
+
+  " goldenView {
+    let g:goldenview__enable_default_mapping = 0
+    nmap <F11> :ToggleGoldenViewAutoResize<CR>
+    " 1. split to tiled windows
+    nmap <silent> <C-L>  <Plug>GoldenViewSplit
+
+    " 2. quickly switch current window with the main pane
+    " and toggle back
+    nmap <silent> <Leader><F8>   <Plug>GoldenViewSwitchMain
+    nmap <silent> <Leader><S-F8> <Plug>GoldenViewSwitchToggle
+
+    " 3. jump to next and previous window
+    nmap <silent> <Leader><C-N>  <Plug>GoldenViewNext
+    nmap <silent> <Leader><C-P>  <Plug>GoldenViewPreviousiew {
+  " } end goldenView
 
   " SuperTab {
     let g:SuperTabDefaultCompletionType="<c-n>"

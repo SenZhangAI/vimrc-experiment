@@ -103,7 +103,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 
-
 " terminal
 if !has("gui_running")
   let g:indent_guides_auto_colors = 0
@@ -138,6 +137,7 @@ let g:rainbow_conf = {
     \}
 
 " } end rainbow
+
 " markdown {
 " LaTex math: support $x^2$, $$x^2$$ syntax
 let g:vim_markdown_math=1
