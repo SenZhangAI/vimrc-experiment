@@ -82,6 +82,14 @@
     cmap cwd lcd %:p:h
     cmap cd. lcd %:p:h
 
+  " 命令行模式增强，ctrl - a到行首， -e 到行尾
+    cnoremap <C-j> <Down>
+    cnoremap <C-k> <Up>
+    cnoremap <C-a> <Home>
+    cnoremap <C-e> <End>
+    cnoremap <C-h> <Left>
+    cnoremap <C-l> <Right>
+
   " Allow using the repeat operator with a visual selection (!)
   " http://stackoverflow.com/a/8064607/127816
     vnoremap . :normal .<CR>
@@ -106,7 +114,7 @@
 " plugins_mapping {
 
   " Nerdcomment {
-    map <Leader><Leader> <Leader>c<space>
+    map <Leader><Leader><Leader> <Leader>c<space>
   " } end Nerdcomment
 
   " Ag(silver searcher) {
