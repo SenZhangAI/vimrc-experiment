@@ -38,7 +38,7 @@
     vnoremap > >gv
 
   " cancel searched highlight
-    nnoremap <CR> :nohlsearch<CR>
+    nnoremap <Leader>/ :nohlsearch<CR>
 
 " } end base_mapping
 
