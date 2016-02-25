@@ -19,7 +19,6 @@ Plugin 'vim-airline/vim-airline', {'name': 'airline'}
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
-"Plugin 'Lokaltog/vim-powerline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
 "Plugin 'Yggdroot/indentLine'
 Plugin 'nathanaelkane/vim-indent-guides'    "another indentLine style
@@ -139,6 +138,7 @@ Plugin 'vimwiki/vimwiki'
 "Plugin 'itchyny/calendar.vim'  " A calender application for Vim
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
+Plugin 'easymotion/vim-easymotion'
 
 
 " All of your Plugins must be added before the following line

@@ -12,6 +12,9 @@
 
 
 " base_mapping {
+  " modify leader
+  let mapleader = ','
+  let g:mapleader = ','
 
   " map backspce to delete a character
     noremap <BS> X
