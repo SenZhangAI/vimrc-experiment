@@ -58,6 +58,18 @@
     nmap <leader>f8 :set foldlevel=8<CR>
     nmap <leader>f9 :set foldlevel=9<CR>
 
+    let g:FoldMethod = 0
+    map <leader>fz :call ToggleFold()<cr>
+    fun! ToggleFold()
+        if g:FoldMethod == 0
+            exe "normal! zM"
+            let g:FoldMethod = 1
+        else
+            exe "normal! zR"
+            let g:FoldMethod = 0
+        endif
+    endfun
+
   " Find merge conflict markers
     map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 

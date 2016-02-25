@@ -10,8 +10,11 @@ set nolist
 set hidden
 set linespace=0
 set cursorline
-set foldmethod=manual
-set nofoldenable
+"set foldmethod=manual
+"set nofoldenable
+set foldenable
+set foldmethod=indent
+set foldlevel=20
 set number
 set numberwidth=6
 set title
@@ -29,15 +32,27 @@ set wildmenu                          " make tab completion for files/buffers ac
 set wildmode=longest:list,full        " use emacs-style tab completion when selecting files, etc
 set key=			                        " disable encryption
 set synmaxcol=128
-set viminfo=			                    " disable .viminfo file
+"set viminfo=			                    " disable .viminfo file
+set viminfo^=%                              " Remember info about open buffers on close
 set ttyfast                           " send more chars while redrawing
 set lazyredraw
 
+" when quit vim，content will show on screen
+set t_ti= t_te=
+
+" fix the bug when use ctrl+m for multicursor，
+"set selection=inclusive
+set selectmode=mouse,key
+" but selecting=inclusive will influent ctrl+v's behavior to include the char under cursor
+set selection=exclusive
 
 set nobackup                          " no *~ backup files
 "set noswapfile
 set nowritebackup
-set copyindent                        " copy the previous indentation on autoindenting
+"copyindent may cause bad format
+"set copyindent                        " copy the previous indentation on autoindenting
+set hlsearch                          " search highlighting
+set incsearch                         " incremental search
 set ignorecase                        " ignore case when searching
 set smartcase
 set shortmess=Ia                      " remove splash wording
@@ -90,7 +105,8 @@ filetype plugin on                    " enable filetype-specific plugins
 autocmd FileType c,cpp,java setlocal formatoptions+=ro
 "C/C++ format settings
 "astyle formater is much better, for example: +N,(N,and insert space between operator etc.
-autocmd FileType c,cpp,cc setlocal cindent comments=sr:/*,mb:*,el:*/,:// cino=:0,l1,g0,N-s,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
+"autocmd FileType c,cpp,cc setlocal comments=sr:/*,mb:*,el:*/,://
+autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,N-s,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
 
 " for Indentation set to be 2 to get faster
 autocmd FileType html,xhtml,css,xml,xslt, setlocal shiftwidth=2 softtabstop=2
