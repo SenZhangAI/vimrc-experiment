@@ -131,18 +131,31 @@
     map <leader>r :NERDTreeFind<cr>
   " } end NERDTree
 
-  " Gundo {
-    nnoremap <F3> :GundoToggle<CR>
-  " } end Gundo
-
   " Tagbar {
-    nmap <F4> :TagbarToggle<cr>
+    nmap <F3> :TagbarToggle<cr>
   " } end Tagbar
+
+  " toggle wrap {
+    nnoremap <F4> :set list! list?<CR>
+  " } end toggle wrap
 
   " numbers {
     " relative/absolute numbering
     nnoremap <F6> :NumbersToggle<CR>
   " } end numbers
+
+  " toggle wrap {
+    nnoremap <F7> :set wrap? wrap!<CR>
+  " } end toggle wrap
+
+  " Gundo {
+    "nnoremap <F8> :GundoToggle<CR>
+  " } end Gundo
+
+  " toggle syntax {
+    " can make open file quicker
+    nnoremap <F9> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+  " } end toggle syntax
 
   " SuperTab {
     let g:SuperTabDefaultCompletionType="<c-n>"
