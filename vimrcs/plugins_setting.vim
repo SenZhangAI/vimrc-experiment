@@ -13,8 +13,16 @@ let g:ag_highlight = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_symbols.space = "\ua0"
-
+if has("win32unix") && !has("gui_running") " cygwin terminal
+  let g:airline_powerline_fonts=0
+  "let g:airline_left_sep = '»'
+  "let g:airline_right_sep = '«'
+  let g:airline_left_sep = '>'
+  let g:airline_right_sep = '<'
+  let g:airline_symbols.whitespace = "\ua0"
+  let g:airline_symbols.linenr = '¶'
+  let g:airline_symbols.branch = '☀'
+endif
 let g:Powerline_symbols='fancy'
 let g:airline_powerline_fonts=1
 let Powerline_symbols='fancy'
@@ -174,7 +182,8 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_error_symbol = '✗'      "set error or warning signs
-let g:syntastic_warning_symbol = '⚠'
+"let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_warning_symbol = '>'
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_highlighting = 0
 " pyflakes is faster then pylint
