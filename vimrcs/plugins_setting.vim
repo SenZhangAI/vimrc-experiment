@@ -205,6 +205,14 @@ let g:syntastic_cpp_compiler_options = '-std=c++11' "GCC options
 "let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "Clang opthons(not good for cygwin)
 " } end syntastic
 
+" quick-scope{
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:qs_first_occurrence_highlight_color = '#afff5f' " gui vim
+let g:qs_first_occurrence_highlight_color = 155       " terminal vim
+let g:qs_second_occurrence_highlight_color = '#5fffff'  " gui vim
+let g:qs_second_occurrence_highlight_color = 81         " terminal vim
+" } end quick-scope
+
 " gutentags {
 "let g:gutentags_project_root=['.git', '.hg']
 " } end gutentags
