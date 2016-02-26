@@ -24,11 +24,11 @@
     "noremap <C-v> P
 
   " navigating for long lines
-    map <UP> gk
-    map <DOWN> gj
+    nnoremap <UP> gk
+    nnoremap <DOWN> gj
 
   " select ALL
-    map <C-A> ggVG
+    nnoremap <C-A> ggVG
 
   " Wrapped lines goes down/up to next row, rather than next line in file.
     noremap j gj
@@ -117,7 +117,7 @@
 " plugins_mapping {
 
   " Nerdcomment {
-    map <Leader><Leader><Leader> <Leader>c<space>
+    map \\ <Leader>c<space>
   " } end Nerdcomment
 
   " Ag(silver searcher) {
@@ -135,9 +135,9 @@
 
   " easy_align {
     " Start interactive EasyAlign in visual mode(e.g. vip<hotkey>)
-    vmap <leader>= <Plug>(EasyAlign)
+    vmap \= <Plug>(EasyAlign)
     " Start interactive EasyAlign for a motion/text object (e.g. <hotkey>ip)
-    nmap <leader>a= <Plug>(EasyAlign)
+    nmap \a= <Plug>(EasyAlign)
   " } end easy_align
 
   " NERDTree {
