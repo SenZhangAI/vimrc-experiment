@@ -116,6 +116,18 @@
 
 " plugins_mapping {
 
+  " fugitive {
+  " git.  git操作最好命令行,vim里面处理简单diff编辑操作
+    " :Gdiff  :Gstatus :Gvsplit
+    nnoremap <leader>gd :Gdiff<CR>
+    " not ready to open
+    " <leader>gb maps to :Gblame<CR>
+    " <leader>gs maps to :Gstatus<CR>
+    " <leader>gl maps to :Glog<CR>
+    " <leader>gc maps to :Gcommit<CR>
+    " <leader>gp maps to :Git push<CR>
+  " }
+
   " Nerdcomment {
     map \\ <Leader>c<space>
   " } end Nerdcomment
@@ -151,7 +163,7 @@
   " } end Ag
 
   " delimitMate {
-    imap <leader>g <Plug>delimitMateJumpMany
+    imap <C-d> <Plug>delimitMateJumpMany
     " map for <CR> has been set with delimitMateCR and NeoComplete
     imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
     imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"
