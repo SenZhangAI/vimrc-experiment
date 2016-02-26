@@ -51,7 +51,7 @@ Plugin 'Raimondi/delimitMate'
 "Plugin 'SenZhangAI/vim-snippets'
 Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
 "Plugin 'c9s/perlomni.vim'    " for perl
-"Plugin 'gcmt/wildfire.vim'
+Plugin 'gcmt/wildfire.vim'
 "Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-surround', {'name': 'surround'}
 

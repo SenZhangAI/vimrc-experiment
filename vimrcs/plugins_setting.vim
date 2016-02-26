@@ -216,6 +216,9 @@ else
 end
 " } end quick-scope
 
+" wildfire{
+" } end wild-fire
+
 " gutentags {
 "let g:gutentags_project_root=['.git', '.hg', '.svn']
 let g:gutentags_project_root=['.git', '.svn']
