@@ -15,6 +15,9 @@ function! PresentationModeOn()
     " as default solaried & luna theme
   else
     "colorscheme Tomorrow
+    " xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
+    let g:qs_first_occurrence_highlight_color = 88   " terminal vim
+    let g:qs_second_occurrence_highlight_color = 166 " terminal vim
     let g:solarized_termcolors=256
     let g:solarized_termtrans=0
     colorscheme solarized
@@ -37,6 +40,8 @@ function! PresentationModeOff()
     " as default solarzied & luna theme
   else
     "colorscheme Tomorrow-Night-Bright
+    let g:qs_second_occurrence_highlight_color = 81  " terminal vim
+    let g:qs_first_occurrence_highlight_color = 155  " terminal vim
 
     let g:solarized_termcolors=256
     let g:solarized_termtrans=1
