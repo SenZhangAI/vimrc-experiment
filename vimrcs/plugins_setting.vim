@@ -91,8 +91,8 @@ let g:gitgutter_on_bufenter = 0
 " } end gitgutter
 
 " Gundo {
-let g:gundo_preview_height = 20
-let g:gundo_help=0
+"let g:gundo_preview_height = 20
+"let g:gundo_help=0
 " } end Gundo
 
 ""indentLine {
@@ -204,6 +204,10 @@ let g:syntastic_cpp_compiler_options = '-std=c++11' "GCC options
 "let g:syntastic_cpp_compiler = 'clang++'
 "let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "Clang opthons(not good for cygwin)
 " } end syntastic
+
+" gutentags {
+"let g:gutentags_project_root=['.git', '.hg']
+" } end gutentags
 
 " tagbar {
 let g:tagbar_ctags_bin='/usr/bin/ctags'

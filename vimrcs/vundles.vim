@@ -30,6 +30,7 @@ Plugin 'zhaocai/GoldenView.Vim'
 
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation
+Plugin 'ludovicchabant/vim-gutentags' " automatically manage tags
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 
