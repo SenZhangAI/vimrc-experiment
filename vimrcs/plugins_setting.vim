@@ -74,8 +74,8 @@ endif
 
 " ctrlp {
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'binary file': '\v\.(exe|so|dll)$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+  \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
   \ }
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_match_window_bottom=1
@@ -83,7 +83,20 @@ let g:ctrlp_max_height=15
 let g:ctrlp_match_window_reversed=0
 let g:ctrlp_mruf_max=500
 let g:ctrlp_follow_symlinks=1
+if executable('ag')
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 " } end ctrlp
+
+" ctrlsf {
+" let g:ctrlsf_position = 'below'
+" let g:ctrlsf_winsize = '30%'
+let g:ctrlsf_auto_close = 0
+let g:ctrlsf_confirm_save = 0
+" } end ctrlsf
 
 " gitgutter {
 let g:gitgutter_on_bufenter = 0
@@ -271,10 +284,6 @@ let delimitMate_expand_inside_quotes = 1
 let delimitMate_balance_matchpairs = 1
 au FileType c,cpp,java let b:delimitMate_insert_eol_marker = 2
 au FileType c,cpp,java let b:delimitMate_eol_marker = ";"
-imap <leader>g <Plug>delimitMateJumpMany
-" map for <CR> has been set with delimitMateCR and NeoComplete
-imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
-imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"
 " } delimitMate
 
 " vimwiki {

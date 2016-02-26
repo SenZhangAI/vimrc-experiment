@@ -120,6 +120,23 @@
     map \\ <Leader>c<space>
   " } end Nerdcomment
 
+  " ctrlsf {
+  nmap \ <Plug>CtrlSFCwordPath<CR>
+  " Note: cannot use <CR> or <C-m> for open
+  " Use : <sapce> or <tab>
+  let g:ctrlsf_mapping = {
+      \ "open"  : "<Space>",
+      \ "openb" : "O",
+      \ "tab"   : "t",
+      \ "tabb"  : "T",
+      \ "prevw" : "p",
+      \ "quit"  : "q",
+      \ "next"  : "<C-J>",
+      \ "prev"  : "<C-K>",
+      \ "pquit" : "q",
+      \ }
+  " } end ctrlsf
+
   " Ag(silver searcher) {
     if executable("Ag")
       let g:ackprg = 'ag --vimgrep'
@@ -132,6 +149,13 @@
       endif
     endif
   " } end Ag
+
+  " delimitMate {
+    imap <leader>g <Plug>delimitMateJumpMany
+    " map for <CR> has been set with delimitMateCR and NeoComplete
+    imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
+    imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"
+  " } delimitMate
 
   " easy_align {
     " Start interactive EasyAlign in visual mode(e.g. vip<hotkey>)
