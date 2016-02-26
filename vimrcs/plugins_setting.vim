@@ -217,7 +217,10 @@ end
 " } end quick-scope
 
 " gutentags {
-"let g:gutentags_project_root=['.git', '.hg']
+"let g:gutentags_project_root=['.git', '.hg', '.svn']
+let g:gutentags_project_root=['.git', '.svn']
+let g:gutentags_generate_on_new = 0
+let g:gutentags_cache_dir='~/.vim_gutentags'
 " } end gutentags
 
 " tagbar {
