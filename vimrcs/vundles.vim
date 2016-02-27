@@ -141,6 +141,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
+Plugin 'osyo-manga/vim-over'     " preview the result for commandline
 
 
 " All of your Plugins must be added before the following line

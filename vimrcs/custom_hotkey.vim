@@ -247,6 +247,11 @@
     " @see plugins setting of neoComplete
   " } end neoComplete
 
+  " vim-over {
+    nmap <Leader>; :OverCommandLine<CR>
+    vmap <Leader>; :OverCommandLine<CR>
+  " } end vim-over
+
   " cscope {
     """"""""""""" My cscope/vim key mappings
     "
