@@ -108,7 +108,7 @@
     nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
   " Map <Leader>m to auto make and run
-    nmap <Leader>m :wa<CR>:make:cw<CR>
+    nmap <Leader>m :wa<CR>:make<CR> :cw<CR>
 
 " } end advance_mapping
 

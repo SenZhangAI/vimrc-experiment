@@ -110,11 +110,11 @@ autocmd FileType c,cpp,java setlocal formatoptions+=ro
 autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,N-s,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
 
 " for Indentation set to be 2 to get faster
-autocmd FileType ruby,javascript,html,xhtml,css,xml,xslt,
-      \setlocal tabstop=2 shiftwidth=2 softtabstop=2 autoindent
+autocmd FileType ruby,javascript,html,xhtml,css,xml,xslt
+      \ setlocal tabstop=2 shiftwidth=2 softtabstop=2 autoindent
 
 " two space indentation for some files
-autocmd FileType zsh,sh,vim,lua,nginx, setlocal shiftwidth=2 softtabstop=2
+autocmd FileType zsh,sh,vim,lua,nginx setlocal shiftwidth=2 softtabstop=2
 
 " MAKEFILE and asm should use tab, not spaces
 autocmd FileType make,asm setlocal noexpandtab shiftwidth=8 softtabstop=0
