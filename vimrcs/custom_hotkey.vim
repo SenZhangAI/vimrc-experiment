@@ -41,7 +41,7 @@
     vnoremap > >gv
 
   " cancel searched highlight
-    nnoremap <Leader>/ :nohlsearch<CR>
+    nnoremap <CR> :nohlsearch<CR>
 
   " use arrow to shift buffer
     noremap <left> :bp<CR>
@@ -128,6 +128,11 @@
     " <leader>gp maps to :Git push<CR>
   " }
 
+  " quickrun {
+    nmap <Leader>r <Plug>(quickrun)
+    map <Leader>qr :QuickRun<CR>
+  " }
+
   " Nerdcomment {
     map \\ <Leader>c<space>
   " } end Nerdcomment
@@ -179,7 +184,7 @@
   " NERDTree {
     " open directory of current opened file
     nnoremap <silent> <F2> :NERDTreeToggle<CR>
-    map <leader>r :NERDTreeFind<cr>
+    map <leader>n :NERDTreeFind<cr>
   " } end NERDTree
 
   " Tagbar {

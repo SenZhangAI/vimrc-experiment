@@ -54,6 +54,14 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 " } end cpp_enhanced_highlight
 
+" quickrun {
+let g:quickrun_config = {
+\   "_" : {
+\       "outputter" : "message",
+\   },
+\}
+let g:quickrun_no_default_key_mappings = 1
+" }
 
 " cscope {
 if has("cscope")

@@ -80,7 +80,7 @@ Plugin 'airblade/vim-gitgutter', {'name': 'gitgutter'}
 
 " @ Plugin --- [ Code BAT Search ]
 Plugin 'rking/ag.vim'
-"Plugin 'thinca/vim-quickrun'
+Plugin 'thinca/vim-quickrun'
 Plugin 'dyng/ctrlsf.vim'
 "Plugin 'mklabs/grunt.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
