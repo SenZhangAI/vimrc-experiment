@@ -70,13 +70,14 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 scriptencoding utf-8
 
 " ignores
-set wildignore+=*.o,*.obj,*.pyc                " output objects
-set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
-set wildignore+=*.swf,*.fla                    " image format
-set wildignore+=*.mp3,*.mp4,*.avi,*.mkv        " media format
-set wildignore+=*.git*,*.hg*,*.svn*            " version control system
+set wildignore+=*.o,*.obj,*.pyc,*.exe,*.out,*.dll,*.so  " output objects
+set wildignore+=*.png,*.jpg,*.gif,*.ico                 " image format
+set wildignore+=*.swf,*.fla                             " image format
+set wildignore+=*.mp3,*.mp4,*.avi,*.mkv                 " media format
+set wildignore+=*.tar,*.gz,*.zip,*.rar,*.bz2            " compressed file
+set wildignore+=*.git*,*.hg*,*.svn*                     " version control system
 set wildignore+=*sass-cache*
-set wildignore+=*.DS_Store
+set wildignore+=*.DS_Store,*.bak
 set wildignore+=log/**
 set wildignore+=tmp/**
 
