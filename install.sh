@@ -10,34 +10,29 @@ vim_rc=~/.vimrc
 gvim_rc=~/.gvimrc
 backup_rand=$RANDOM
 
+backup_file() {
+  if [ -L $1 ] || [ -f $1 ]; then
+    echo "There's a original file:[$1]exist."
+    read -p "Would you like to backup it first? [y/n] " ans
 
-
-# check files exist and backup
-## check if vimrc is already exist
-if [ -L $vim_rc ] || [ -f $vim_rc ]
-then
-  echo "There's a .vimrc in your home directory."
-  read -p "Would you like to backup your .vimrc first? [y/n] " ans
-  if [ "$ans" == "y" ]
-  then
-    echo "backup your original $vim_rc to $vim_rc-$(date +%Y%m%d)-$backup_rand-bak"
-    mv $vim_rc $vim_rc$(date +%Y%m%d)-$backup_rand-bak
+    if [ "$ans" == "y" ]; then
+      echo "backup your original $1 to $1-$(date +%Y%m%d)-$backup_rand-bak"
+      mv $1 $1$(date +%Y%m%d)-$backup_rand-bak
+      return 1;
+    fi
   fi
-fi
+  return 0;
+}
 
-## check if gvimrc is already exist
-if [ -L $gvim_rc ] || [ -f $gvim_rc ]
-then
-  echo "There's a .gvimrc in your home directory."
-  read -p "Would you like to backup your .gvimrc first? [y/n] " ans
-  if [ "$ans" == "y" ]
-  then
-    echo "backup your original $gvim_rc to $gvim_rc-$(date +%Y%m%d)-$backup_rand-bak"
-    mv $gvim_rc $gvim_rc$(date +%Y%m%d)-$backup_rand-bak
-  fi
-fi
+backup_file $vim_rc
+backup_file $gvim_rc
 
+# linking to .rc
+## linking to .vimrc
+ln -s $vim_dir/vimrc $vim_rc 2>/dev/null
 
+## linking to .gvimrc
+ln -s $vim_dir/gvimrc $gvim_rc 2>/dev/null
 
 # install vundle and plugin
 ## install vundle
@@ -50,26 +45,46 @@ git clone https://github.com/VundleVim/Vundle.vim ./bundle/vundle
 ## install plugin
 vim +PluginInstall +qall
 
-
-
-# linking to .rc
-## linking to .vimrc
-ln -s $vim_dir/vimrc $vim_rc 2>/dev/null
-
-## linking to .gvimrc
-ln -s $vim_dir/gvimrc $gvim_rc 2>/dev/null
-
-
-
 # install fonts for airline
+echo "install... [powerline_fonts]"
 ./bundle/powerline_fonts/install.sh
 
+has_not_installed() {
+  echo "Check if [$1] installed..."
+  found=$(which $1 2>/dev/null)
+  if [ -z "$found" ]; then
+    echo "                           ------- No"
+    return 0
+  else
+    echo "                           ------- Yes"
+    return 1
+  fi
+}
 
+auto_install() {
+  echo "install... [$1]"
+  if [ $# -gt 1 ]; then
+    echo  "  > intall-method: " "$2"
+  fi
+  read -p "  > would you like to auto-install [$1]? [y/n] " ans
+  if [ "$ans" == "y" ]; then
 
-# check if ag is installed and choose to insall
-find_ag_dir=$(which ag 2>/dev/null)
+    if [ $# -gt 1 ]; then
+      #sudo apt-get install silversearcher-ag
+      eval "$2"
+      return 1
+    else
+      return 0
+    fi
 
-System_is() {
+  else
+
+    return 0
+
+  fi
+}
+
+system_is() {
   test=$(uname -a 2>/dev/null | grep -i $1)
   if [ -z "$test" ]; then
     return 1
@@ -78,38 +93,82 @@ System_is() {
   fi
 }
 
-echo ""
-echo "Check if Ag installed..."
-if [ -z $find_ag_dir ]; then
-  echo " * Can't find the silver searcher---Ag"
-  echo " * Install Ag if you need... Checking your system..."
-#ubuntu
-  if System_is ubuntu; then
-    read -p "  > Your system is Ubuntu, would you like to auto-install it by apt-get? [y/n] " ans
-    if [ "$ans" == "y" ]
-    then
-      sudo apt-get install silversearcher-ag
-    fi
+if system_is ubuntu; then
 
-  elif System_is cygwin; then
-    read -p "  > Your system is Cygwin, would you like to auto-install it from source? [y/n] " ans
-    echo    "   - [gcc] [make] MUST installed first."
-    echo    "   - the related packages:[automake] [pkg-config] [libpcre-devel] [liblzma-dev] MUST installed first."
-    echo "      - Ag will not by installed successly if these packages havn't installed."
-    read -p "   - have you INSTALLED these packages? [y/n]"  ans
-    if [ "$ans" == "y" ]
-    then
-      ag_src_tmp_dir=~/Ag_tmp_src
-      git clone https://github.com/ggreer/the_silver_searcher.git $ag_src_tmp_dir
-      cd $ag_src_tmp_dir && ./build.sh && make install
-      cd $vim_dir
-      rm -rf $ag_src_tmp_dir
+  echo "system detected: [ubuntu]"
+
+  if has_not_installed ag; then
+    echo "Plugin [ag.vim] depend on it"
+    auto_install ag "sudo apt-get install silversearcher-ag"
+  fi
+
+  if has_not_installed clang; then
+    echo "Plugin [marching] depend on it"
+    auto_install clang "sudo apt-get install llvm build-essental && apt-get update && apt-get install clang-3.5"
+  fi
+
+  if has_not_installed astyle; then
+    echo "Plugin [autoformat] depend on it"
+    auto_install astyle "sudo apt-get install astyle"
+  fi
+
+  if has_not_installed lua; then
+    echo "You should manual install package: [lua]"
+    auto_install lua "sudo apt-get install lua"
+  fi
+
+  if has_not_installed ctags; then
+    echo "You should manual install package: [ctags]"
+    auto_install ctags "sudo apt-get install ctags"
+  fi
+
+elif system_is cygwin; then
+
+  echo "system detected: [cygwin]"
+
+  if has_not_installed ag; then
+    echo "Plugin [ag.vim] depend on it"
+
+    if auto_install ag; then
+
+      echo    "   - [gcc] [make] MUST installed first."
+      echo    "   - the related packages:[automake] [pkg-config] [libpcre-devel] [liblzma-dev] MUST installed first."
+      echo "      - Ag will not by installed successly if these packages havn't installed."
+      read -p "   - have you INSTALLED these packages? [y/n]"  ans
+      if [ "$ans" == "y" ]; then
+        ag_src_tmp_dir=~/Ag_tmp_src
+        git clone https://github.com/ggreer/the_silver_searcher.git $ag_src_tmp_dir
+        cd $ag_src_tmp_dir && ./build.sh && make install
+        cd $vim_dir
+        rm -rf $ag_src_tmp_dir
+      fi
+
     fi
   fi
+
+  if has_not_installed clang; then
+    echo "You should manual install package: [clang] [libclang] [libclang-devel]"
+    echo "Plugin [marching] depend on it"
+  fi
+
+  if has_not_installed astyle; then
+    echo "You should manual install package: [astyle]"
+    echo "Plugin [autoformat] depend on it"
+  fi
+
+  if has_not_installed lua; then
+    echo "You should manual install package: [lua]"
+    echo "Plugin [NeoComplete] depend on it"
+  fi
+
+  if has_not_installed ctags; then
+    echo "You should manual install package: [ctags]"
+    echo "Plugin [gutentags] depend on it"
+  fi
+
 fi
 
-# generate cygwin_rebase_vimproc.bat file
-if System_is cygwin; then
+if system_is cygwin; then
   dash_dir=$(cygpath -w /bin)
   echo '@echo off
 
