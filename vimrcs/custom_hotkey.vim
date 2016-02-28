@@ -2,6 +2,7 @@
 "            Key (re)Mapping
 " ======================================
 " Description: this setting include:
+" 0. geek_mapping
 " 1. base_mapping
 " 2. advance_mapping
 " 3. plugins_mapping
@@ -10,6 +11,22 @@
 " Note: some plugins mapping are define near the plugins setting.
 " and default keymaps of the plugins are not included.
 
+" geek_mapping {
+  " quick go to normal-mode
+    inoremap jk <ESC>
+    vnoremap jk <ESC>
+
+  " map command-mode to ;
+    nnoremap ; :
+
+  " change single word under cursor to upper case
+    nnoremap gh viwUe
+  " change single word under cursor to lower case
+    nnoremap gl viwue
+
+  " delimiteMate jump
+    imap ;' <Plug>delimitMateJumpMany
+" } geek_mapping
 
 " base_mapping {
   " modify leader
@@ -41,7 +58,7 @@
     vnoremap > >gv
 
   " cancel searched highlight
-    nnoremap <CR> :nohlsearch<CR>
+    nnoremap ,/ :nohlsearch<CR>
 
   " use arrow to shift buffer
     noremap <left> :bp<CR>
@@ -138,7 +155,8 @@
   " } end Nerdcomment
 
   " ctrlsf {
-  nmap \ <Plug>CtrlSFCwordPath<CR>
+  nmap <Leader>sf <Plug>CtrlSFCwordPath<CR>
+  vmap <Leader>sf <Plug>CtrlSFVwordPath<CR>
   " Note: cannot use <CR> or <C-m> for open
   " Use : <sapce> or <tab>
   let g:ctrlsf_mapping = {
@@ -168,7 +186,6 @@
   " } end Ag
 
   " delimitMate {
-    imap <C-d> <Plug>delimitMateJumpMany
     " map for <CR> has been set with delimitMateCR and NeoComplete
     imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
     imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"

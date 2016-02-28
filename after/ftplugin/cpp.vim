@@ -9,6 +9,12 @@ else
   nnoremap <buffer> <F5> :echo "No [clang++] or [g++] found!"
 endif
 
+" geek mapping {
+inoremap pp p_
+inoremap ll _
+inoremap aa ->
+" } geek mapping
+
 " marching {
   " clang コマンドの設定
   "let g:marching_clang_command = "C:/clang.exe"
