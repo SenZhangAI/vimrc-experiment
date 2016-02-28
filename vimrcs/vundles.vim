@@ -137,7 +137,7 @@ Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 Plugin 'vimwiki/vimwiki'
 "Plugin 'itchyny/calendar.vim'  " A calender application for Vim
-Plugin 'vim-scripts/a.vim'
+Plugin 'nacitar/a.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
