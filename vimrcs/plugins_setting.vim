@@ -203,8 +203,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_error_symbol = '✗'      "set error or warning signs
+let g:syntastic_warning_symbol = '∆'
 "let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_warning_symbol = '>'
+"let g:syntastic_warning_symbol = '>'
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_highlighting = 0
 " pyflakes is faster then pylint

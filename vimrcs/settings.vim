@@ -36,6 +36,7 @@ set synmaxcol=128
 set viminfo^=%                              " Remember info about open buffers on close
 set ttyfast                           " send more chars while redrawing
 set lazyredraw
+"set listchars=tab:>-,trail:·,eol:¬,extends:❯,precedes:❮
 
 " when quit vim，content will show on screen
 set t_ti= t_te=
