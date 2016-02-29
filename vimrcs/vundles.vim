@@ -21,8 +21,8 @@ Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
 "Plugin 'ap/vim-buftabline'
 "Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
 Plugin 'morhetz/gruvbox'
-"Plugin 'Yggdroot/indentLine'
-Plugin 'nathanaelkane/vim-indent-guides'    "another indentLine style
+Plugin 'Yggdroot/indentLine'
+"Plugin 'nathanaelkane/vim-indent-guides'    "another indentLine style
 Plugin 'myusuf3/numbers.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'Chiel92/vim-autoformat'
