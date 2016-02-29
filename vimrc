@@ -17,7 +17,31 @@ syntax on                             " syntax highlight
 syntax enable
 set t_Co=256
 try
-  colorscheme Tomorrow-Night-Bright
+  " "desert for Ubuntu
+  "colorscheme desert256
+  "set background=dark
+  "hi Normal ctermbg=NONE " then set terminal backgroundRGB=44 0 30
+  "hi NoText ctermbg=NONE
+  "hi CursorLine cterm=NONE ctermbg=53
+
+  " "solarized dark
+  "let g:qs_second_occurrence_highlight_color = 81  " terminal vim
+  "let g:qs_first_occurrence_highlight_color = 155  " terminal vim
+  "let g:solarized_termcolors=256
+  "let g:solarized_termtrans=1 " then set terminal backgroundRGB=0 43 54
+  "colorscheme solarized
+  "set background=dark
+  "hi CursorLine ctermbg=none
+  "hi LineNr ctermbg=none
+  "hi Normal ctermfg=248
+  "hi Comment ctermfg=242
+
+  " "Tomorrow Night Bright
+  "colorscheme Tomorrow-Night-Bright
+
+  " "gruvbox
+  colorscheme gruvbox
+  set background=dark
 catch
 endtry
 
