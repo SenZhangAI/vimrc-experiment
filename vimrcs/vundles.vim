@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
 
 
 " @ Plugin --- [ Style Custom ]
-Plugin 'godlygeek/csapprox'
+"Plugin 'godlygeek/csapprox'  " not useful to me, I adjust color by myself
 Plugin 'vim-airline/vim-airline', {'name': 'airline'}
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts', {'name': 'powerline_fonts'}

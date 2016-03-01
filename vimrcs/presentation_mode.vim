@@ -23,6 +23,8 @@ function! PresentationModeOn()
     let g:solarized_termtrans=0
     colorscheme solarized
     set background=light
+    hi SpecialKey cterm=NONE ctermbg=none
+    hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end
@@ -49,6 +51,14 @@ function! PresentationModeOff()
     let g:solarized_termtrans=1
     colorscheme solarized
     set background=dark
+    hi CursorLine ctermbg=none
+    hi CursorColumn ctermbg=none
+    hi LineNr ctermbg=none ctermfg=244
+    hi Normal ctermfg=249
+    hi Comment ctermfg=242
+    hi SpecialKey cterm=NONE ctermbg=none
+    hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
+
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end
