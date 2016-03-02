@@ -58,7 +58,7 @@
     vnoremap > >gv
 
   " cancel searched highlight
-    nnoremap ,/ :nohlsearch<CR>
+    nnoremap <CR> :nohlsearch<CR>
 
   " use arrow to shift buffer
     noremap <left> :bp<CR>
@@ -188,7 +188,7 @@
   " delimitMate {
     " map for <CR> has been set with delimitMateCR and NeoComplete
     imap <expr> <BS> pumvisible() ? "\<C-h>" : "<Plug>delimitMateBS"
-    imap <expr> <S-Tab> pumvisible() ? "<Plug>SuperTabBackward" : "<Plug>delimitMateS-Tab"
+    imap <C-d> <Plug>delimitMateS-Tab
   " } delimitMate
 
   " easy_align {
@@ -197,6 +197,13 @@
     " Start interactive EasyAlign for a motion/text object (e.g. <hotkey>ip)
     nmap \a= <Plug>(EasyAlign)
   " } end easy_align
+
+  " wildfire{
+    " This selects the next closest text object.
+    map + <Plug>(wildfire-fuel)
+    " This selects the previous closest text object.
+    vmap _ <Plug>(wildfire-water)
+  " } end wild-fire
 
   " NERDTree {
     " open directory of current opened file
