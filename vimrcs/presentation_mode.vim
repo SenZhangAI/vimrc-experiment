@@ -15,16 +15,16 @@ function! PresentationModeOn()
     " as default solaried & luna theme
   else
     "colorscheme Tomorrow
-    " xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
-    " "use indentLine instead of IndentGuides so deactivate below setting
-    "let g:qs_first_occurrence_highlight_color = 88   " terminal vim
-    "let g:qs_second_occurrence_highlight_color = 166 " terminal vim
     let g:solarized_termcolors=256
     let g:solarized_termtrans=0
     colorscheme solarized
     set background=light
     hi SpecialKey cterm=NONE ctermbg=none
     hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
+    " "for quick-scope
+    " "xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
+    let g:qs_first_occurrence_highlight_color = 88  " terminal vim
+    let g:qs_second_occurrence_highlight_color = 166  " terminal vim
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end
@@ -43,10 +43,6 @@ function! PresentationModeOff()
     " as default solarzied & luna theme
   else
     "colorscheme Tomorrow-Night-Bright
-    " "use indentLine instead of IndentGuides so deactivate below setting
-    "let g:qs_second_occurrence_highlight_color = 81  " terminal vim
-    "let g:qs_first_occurrence_highlight_color = 155  " terminal vim
-
     let g:solarized_termcolors=256
     let g:solarized_termtrans=1
     colorscheme solarized
@@ -58,7 +54,9 @@ function! PresentationModeOff()
     hi Comment ctermfg=242
     hi SpecialKey cterm=NONE ctermbg=none
     hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
-
+    " "for quick-scope
+    let g:qs_first_occurrence_highlight_color = 155  " terminal vim
+    let g:qs_second_occurrence_highlight_color = 81  " terminal vim
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end

@@ -37,7 +37,6 @@ try
     hi Normal ctermfg=249
     hi Comment ctermfg=242
     hi SpecialKey cterm=NONE ctermbg=none
-    hi Todo ctermfg=214 guifg=#ffaf00 guibg=none
 
   " " solarized light
     "let g:solarized_termcolors=256
@@ -45,7 +44,6 @@ try
     "colorscheme solarized
     "set background=light
     "hi SpecialKey cterm=NONE ctermbg=none
-    "hi Todo ctermfg=214 guifg=#ffaf00 guibg=none
 
   " "Tomorrow Night Bright
     "colorscheme Tomorrow-Night-Bright
@@ -58,6 +56,15 @@ try
     "let g:rehash256=1
     "colorscheme molokai
     "set background=dark
+
+" easy-motion{
+hi EasyMotionTarget2FirstDefault cterm=bold ctermbg=none ctermfg=202
+hi EasyMotionTarget2SecondDefault cterm=bold ctermbg=none ctermfg=202
+" } end easy-motion
+
+" syntastic{
+hi SyntasicWarningSign term=bold cterm=bold ctermbg=none ctermfg=214 guifg=#ffaf00 guibg=none
+" } end syntastic
 
 catch
 endtry
