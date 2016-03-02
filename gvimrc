@@ -1,7 +1,6 @@
 set guioptions=ce
 set antialias
 "set linespace=2
-colorscheme solarized
 
 if has("gui_macvim")
   set guifont=Inconsolata\ for\ Powerline:h18

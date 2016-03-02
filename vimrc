@@ -17,54 +17,61 @@ syntax on                             " syntax highlight
 syntax enable
 set t_Co=256
 try
-  " "desert for Ubuntu
-    "colorscheme desert256
-    "set background=dark
-    "" "set terminal backgroundRGB=44 0 30
-    "hi Normal ctermbg=NONE
-    "hi NoText ctermbg=NONE
-    "hi CursorLine cterm=NONE ctermbg=53
-
-  " "solarized dark
-    let g:solarized_termcolors=256
-    let g:solarized_termtrans=1
-     "set terminal backgroundRGB=0 43 54
+  if has("gui_running")
     colorscheme solarized
     set background=dark
-    hi CursorLine ctermbg=none
-    hi CursorColumn ctermbg=none
-    hi LineNr ctermbg=none ctermfg=244
-    hi Normal ctermfg=249
-    hi Comment ctermfg=242
-    hi SpecialKey cterm=NONE ctermbg=none
+  else
+    " "desert for Ubuntu
+      "colorscheme desert256
+      "set background=dark
+      "" "set terminal backgroundRGB=44 0 30
+      "hi Normal ctermbg=NONE
+      "hi NoText ctermbg=NONE
+      "hi CursorLine cterm=NONE ctermbg=53
 
-  " " solarized light
-    "let g:solarized_termcolors=256
-    "let g:solarized_termtrans=0
-    "colorscheme solarized
-    "set background=light
-    "hi SpecialKey cterm=NONE ctermbg=none
+    " "solarized dark
+      let g:solarized_termcolors=256
+      let g:solarized_termtrans=1
+       "set terminal backgroundRGB=0 43 54
+      colorscheme solarized
+      set background=dark
+      hi CursorLine ctermbg=none
+      hi CursorColumn ctermbg=none
+      hi LineNr ctermbg=none ctermfg=244
+      hi Normal ctermfg=249
+      hi Comment ctermfg=244
+      hi SpecialKey cterm=NONE ctermbg=none
+      hi Nontext cterm=NONE ctermbg=none
+      hi vimIsCommand ctermfg=249
 
-  " "Tomorrow Night Bright
-    "colorscheme Tomorrow-Night-Bright
+    " " solarized light
+      "let g:solarized_termcolors=256
+      "let g:solarized_termtrans=0
+      "colorscheme solarized
+      "set background=light
+      "hi SpecialKey cterm=NONE ctermbg=none
 
-  " "gruvbox
-    "colorscheme gruvbox
-    "set background=dark
+    " "Tomorrow Night Bright
+      "colorscheme Tomorrow-Night-Bright
 
-  " "mololai
-    "let g:rehash256=1
-    "colorscheme molokai
-    "set background=dark
+    " "gruvbox
+      "colorscheme gruvbox
+      "set background=dark
 
-" easy-motion{
-hi EasyMotionTarget2FirstDefault cterm=bold ctermbg=none ctermfg=202
-hi EasyMotionTarget2SecondDefault cterm=bold ctermbg=none ctermfg=202
-" } end easy-motion
+    " "mololai
+      "let g:rehash256=1
+      "colorscheme molokai
+      "set background=dark
+  endif
 
-" syntastic{
-hi SyntasicWarningSign term=bold cterm=bold ctermbg=none ctermfg=214 guifg=#ffaf00 guibg=none
-" } end syntastic
+  " easy-motion{
+  hi EasyMotionTarget2FirstDefault cterm=bold ctermbg=none ctermfg=202
+  hi EasyMotionTarget2SecondDefault cterm=bold ctermbg=none ctermfg=202
+  " } end easy-motion
+
+  " syntastic{
+  hi SyntasicWarningSign term=bold cterm=bold ctermbg=none ctermfg=214 guifg=#ffaf00 guibg=none
+  " } end syntastic
 
 catch
 endtry

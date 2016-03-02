@@ -30,9 +30,9 @@ set switchbuf=useopen
 set showtabline=2                     " always show tab
 set wildmenu                          " make tab completion for files/buffers act like bash
 set wildmode=longest:list,full        " use emacs-style tab completion when selecting files, etc
-set key=			                        " disable encryption
+set key=                              " disable encryption
 set synmaxcol=128
-"set viminfo=			                    " disable .viminfo file
+"set viminfo=                         " disable .viminfo file
 set viminfo^=%                              " Remember info about open buffers on close
 set ttyfast                           " send more chars while redrawing
 set lazyredraw

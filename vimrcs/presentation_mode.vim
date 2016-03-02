@@ -51,9 +51,10 @@ function! PresentationModeOff()
     hi CursorColumn ctermbg=none
     hi LineNr ctermbg=none ctermfg=244
     hi Normal ctermfg=249
-    hi Comment ctermfg=242
+    hi Comment ctermfg=244
     hi SpecialKey cterm=NONE ctermbg=none
-    hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
+    hi Nontext cterm=NONE ctermbg=none
+    hi vimIsCommand ctermfg=249
     " "for quick-scope
     let g:qs_first_occurrence_highlight_color = 155  " terminal vim
     let g:qs_second_occurrence_highlight_color = 81  " terminal vim
