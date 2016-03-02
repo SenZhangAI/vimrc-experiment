@@ -197,8 +197,10 @@
     nmap <Leader>ue :UltiSnipsEdit<CR>
     nmap <Leader>us :UltiSnipsEditSplit<CR>
     let g:UltiSnipsExpandTrigger="<C-y>"
-    let g:UltiSnipsJumpForwardTrigger="<Tab>"
-    let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+    "let g:UltiSnipsJumpForwardTrigger="<Tab>"
+    "let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+    let g:UltiSnipsJumpForwardTrigger="<C-j>"
+    let g:UltiSnipsJumpBackwardTrigger="<C-k>"
     let g:UltiSnipsEnableSnipMate=0
   " } end UltiSnips
 
