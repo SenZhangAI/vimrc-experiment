@@ -47,7 +47,7 @@ inoremap <expr><C-y> neocomplete#close_popup()
 imap <expr><CR> neosnippet#expandable() ?
       \ "\<Plug>(neosnippet_expand_or_jump)" : (pumvisible() ?
       \ "\<C-y>" : (neosnippet#jumpable() ?
-      \ "\<Plug>(neosnippet_expand_or_jump)" : "<Plug>delimitMateCR"))
+      \ "\<Plug>(neosnippet_expand_or_jump)" : "\<Plug>delimitMateCR"))
 smap <TAB> <Right><Plug>(neosnippet_jump_or_expand)
 " For cursor moving in insert mode(Not recommended)
 "inoremap <expr><Left>  neocomplete#close_popup() . "\<Left>"

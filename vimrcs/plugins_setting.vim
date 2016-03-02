@@ -201,6 +201,12 @@ let g:surround_45="<% \r %>"   " -
 let g:surround_61="<%= \r %>"  " =
 " } end surround
 
+" UltiSnips {
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsEditSplit="vertical"
+" } end UltiSnips
+
 " syntastic {
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

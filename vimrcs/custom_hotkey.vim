@@ -14,7 +14,6 @@
 " geek_mapping {
   " quick go to normal-mode
     inoremap jk <ESC>
-    vnoremap jk <ESC>
 
   " map command-mode to ;
     nnoremap ; :
@@ -192,6 +191,19 @@
     " This selects the previous closest text object.
     vmap _ <Plug>(wildfire-water)
   " } end wild-fire
+
+  " UltiSnips {
+    " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+    nmap <Leader>ue :UltiSnipsEdit<CR>
+    nmap <Leader>us :UltiSnipsEditSplit<CR>
+    let g:UltiSnipsExpandTrigger="<C-y>"
+    let g:UltiSnipsJumpForwardTrigger="<Tab>"
+    let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+    let g:UltiSnipsEnableSnipMate=0
+  " } end UltiSnips
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
   " NERDTree {
     " open directory of current opened file

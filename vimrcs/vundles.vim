@@ -47,9 +47,9 @@ Plugin 'scrooloose/nerdcommenter'
 
 " @ Plugin --- [ Auto Complete ]
 Plugin 'Raimondi/delimitMate'
-"Plugin 'SirVer/ultisnips'
+Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
-"Plugin 'SenZhangAI/vim-snippets'
+Plugin 'SenZhangAI/vim-snippets'
 Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
 "Plugin 'c9s/perlomni.vim'    " for perl
 Plugin 'gcmt/wildfire.vim'
