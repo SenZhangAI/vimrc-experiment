@@ -43,6 +43,7 @@ try
       hi SpecialKey cterm=NONE ctermbg=none
       hi Nontext cterm=NONE ctermbg=none
       hi vimIsCommand ctermfg=249
+      hi MatchParen ctermbg=24
 
     " " solarized light
       "let g:solarized_termcolors=256
