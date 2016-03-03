@@ -16,9 +16,6 @@ inoremap aa ->
 " } geek mapping
 
 " marching {
-  " clang コマンドの設定
-  "let g:marching_clang_command = "C:/clang.exe"
-  let g:marching_clang_command = "/usr/bin/clang.exe"
 
   " オプションを追加する
   " filetype=cpp に対して設定する場合
@@ -26,13 +23,6 @@ inoremap aa ->
   \   "cpp" : "-std=c++11"
   \}
   " \   cpp : -std=gnu++1y
-
-  " インクルードディレクトリのパスを設定
-  let g:marching_include_paths = [
-  \   "/lib/gcc/i686-pc-cygwin/4.9.3/include/c++"
-  \]
-  "\   "C:/MinGW/lib/gcc/mingw32/4.6.2/include/c++"
-  "\   "C:/cpp/boost"
 
   " neocomplete.vim と併用して使用する場合
   let g:marching_enable_neocomplete = 1

@@ -195,7 +195,6 @@
   " UltiSnips {
     " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
     nmap <Leader>ue :UltiSnipsEdit<CR>
-    nmap <Leader>us :UltiSnipsEditSplit<CR>
     let g:UltiSnipsExpandTrigger="<C-y>"
     "let g:UltiSnipsJumpForwardTrigger="<Tab>"
     "let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"

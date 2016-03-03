@@ -8,8 +8,8 @@ source ~/.vim/vimrcs/vundles.vim
 source ~/.vim/vimrcs/settings.vim
 source ~/.vim/vimrcs/plugins_setting.vim
 source ~/.vim/vimrcs/neoComplete.vim
+source ~/.vim/vimrcs/custom_config.vim
 source ~/.vim/vimrcs/custom_hotkey.vim
-source ~/.vim/vimrcs/snipMate.vim
 source ~/.vim/vimrcs/presentation_mode.vim
 source ~/.vim/vimrcs/writer_mode.vim
 

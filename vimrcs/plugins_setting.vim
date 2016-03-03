@@ -65,7 +65,6 @@ let g:quickrun_no_default_key_mappings = 1
 
 " cscope {
 if has("cscope")
-  set csprg=/usr/bin/cscope " should be setting to real path when new install
   set csto=0
   set cst
   set nocsverb
@@ -227,7 +226,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_balloons = 1
 
 " C++ settings
-let g:syntastic_cpp_include_dirs=['/usr/include']
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler = 'g++'
@@ -254,11 +252,9 @@ end
 "let g:gutentags_project_root=['.git', '.hg', '.svn']
 let g:gutentags_project_root=['.git', '.svn']
 let g:gutentags_generate_on_new = 0
-let g:gutentags_cache_dir='~/.vim_gutentags'
 " } end gutentags
 
 " tagbar {
-let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=35
 let g:tagbar_indent=1
 let g:tagbar_autopreview=1
