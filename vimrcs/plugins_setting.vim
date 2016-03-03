@@ -215,7 +215,7 @@ let g:syntastic_error_symbol = '✗'      "set error or warning signs
 let g:syntastic_warning_symbol = '∆'
 "let g:syntastic_warning_symbol = '⚠'
 "let g:syntastic_warning_symbol = '>'
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_enable_highlighting = 1
 " pyflakes is faster then pylint
 "let g:syntastic_python_checkers=['pyflakes']
