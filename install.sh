@@ -78,10 +78,23 @@ auto_install() {
     fi
 
   else
-
     return 0
-
   fi
+}
+
+# functiom for install vimproc
+install_vimproc() {
+  echo "install... [vimproc]"
+  if [ ! -d ./bundle/vimproc.vim ]; then
+    echo "install_vimproc error: no vimproc.vim dir found"
+    exit 1
+  fi
+
+  cd bundle/vimproc.vim
+  #exapmle: make -f make_cygwin.mak
+  eval "$1"
+  cd $vim_dir
+  return 0
 }
 
 system_is() {
@@ -121,6 +134,9 @@ if system_is ubuntu; then
     echo "You should manual install package: [ctags]"
     auto_install ctags "sudo apt-get install ctags"
   fi
+
+  #install vimproc
+  install_vimproc "sudo make"
 
 elif system_is cygwin; then
 
@@ -166,6 +182,8 @@ elif system_is cygwin; then
     echo "Plugin [gutentags] depend on it"
   fi
 
+  #install vimproc
+  install_vimproc "make -f make_cygwin.mak"
 fi
 
 if system_is cygwin; then
