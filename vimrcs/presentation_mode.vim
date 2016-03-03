@@ -20,7 +20,8 @@ function! PresentationModeOn()
     colorscheme solarized
     set background=light
     hi SpecialKey cterm=NONE ctermbg=none
-    hi Todo ctermfg=214 guifg=#ffaf00 guibg=non
+    hi Nontext cterm=NONE ctermbg=none
+    hi MatchParen ctermbg=208
     " "for quick-scope
     " "xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
     let g:qs_first_occurrence_highlight_color = 88  " terminal vim
@@ -55,6 +56,7 @@ function! PresentationModeOff()
     hi SpecialKey cterm=NONE ctermbg=none
     hi Nontext cterm=NONE ctermbg=none
     hi vimIsCommand ctermfg=249
+    hi MatchParen ctermbg=208
     " "for quick-scope
     let g:qs_first_occurrence_highlight_color = 155  " terminal vim
     let g:qs_second_occurrence_highlight_color = 81  " terminal vim

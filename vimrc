@@ -43,7 +43,7 @@ try
       hi SpecialKey cterm=NONE ctermbg=none
       hi Nontext cterm=NONE ctermbg=none
       hi vimIsCommand ctermfg=249
-      hi MatchParen ctermbg=24
+      hi MatchParen ctermbg=208
 
     " " solarized light
       "let g:solarized_termcolors=256
@@ -51,6 +51,8 @@ try
       "colorscheme solarized
       "set background=light
       "hi SpecialKey cterm=NONE ctermbg=none
+      "hi Nontext cterm=NONE ctermbg=none
+      "hi MatchParen ctermbg=208
 
     " "Tomorrow Night Bright
       "colorscheme Tomorrow-Night-Bright

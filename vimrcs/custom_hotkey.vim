@@ -18,11 +18,6 @@
   " map command-mode to ;
     nnoremap ; :
 
-  " change single word under cursor to upper case
-    nnoremap gh viwUe
-  " change single word under cursor to lower case
-    nnoremap gl viwue
-
   " delimiteMate jump
     imap ;' <Plug>delimitMateJumpMany
 " } geek_mapping
@@ -113,6 +108,11 @@
 
   " Map <Leader>m to auto make and run
     nmap <Leader>m :wa<CR>:make<CR> :cw<CR>
+
+  " change single word under cursor to upper case
+    nnoremap gh viwUe
+  " change single word under cursor to lower case
+    nnoremap gl viwue
 
 " } end advance_mapping
 
