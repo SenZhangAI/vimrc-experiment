@@ -38,12 +38,23 @@
 ### 2. 配置路径
 部分插件需要配置路径，这部分内容已集成至`vimrc/custom_config.vim`中，只需修改该文件中的内容即可。
 
-### 3. Cygwin中安装the_silver_searcher
+### 3. 修改配色
+配色直接写在`vimrc`文件中，修改即可，
+
+需要说明的是，对于gvim等gui下的vim配色较为容易，但字符终端terminal下的配色通常例如xterm只有256色，所以很多配色显示会有误差。
+
+对于终端配色的问题，我特意修改好了几个终端下较为合适的配色方案，参见`vimrc`
+
+需要某种默认配色方案时（例如molokai）配色，则将默认配色注释掉，将molokai配色的注释去掉即可。
+
+其中 [gruvbox] 的终端配色方案稍麻烦一点，参见[gruvbox终端配色说明](https://github.com/morhetz/gruvbox/wiki/Terminal-specific)
+
+### 4. Cygwin中安装the_silver_searcher
 如需使用[ag]，需要安装相应[the_silver_searcher]，
 
 对于Cygwin，ag为源代码编译安装，需要首先安装**gcc**,**make**,**automake**,**pkg-config**,**libpcre-devel**,**liblzma-dev**。
 
-### 4. Cygwin环境在安装vimproc的问题
+### 5. Cygwin环境在安装vimproc的问题
 在Cygwin环境中，对于插件vimproc，新加入的dll可能需要rebase，否则其执行fork时可能出现bug，
 
 参见[issue](https://github.com/Shougo/vimproc.vim/issues/241)
@@ -299,3 +310,4 @@ tag主要有三方面用途：
 [autoformat]:https://github.com/Chiel192/vim-autoformat
 [marching]:https://github.com/osyo-manga/vim-marching
 [gutentags]:https://github.com/ludovicchabant/vim-gutentags
+[gruvbox]:https://github.com/morhetz/gruvbox
