@@ -8,40 +8,53 @@
 
 本版本对于原版本改动较大，主要适用于C/C++。
 
-## 安装步骤
+## 安装
+
+### 执行install.sh
 
 ```bash
 ~ $ git clone https://github/SenZhangAI/vimrc-experiment ~/.vim
-~ $ ~/.vim/install.sh
+~ $ cd .vim
+~/.vim $ ./install.sh
 ```
 
-### 安装注意事项
+0. 如果Ubuntu需要Neocomplete的代码补全功能，vim需要有`+lua`的支持，所以如果vim版本老旧，则需要换更新版本，或者vim源码安装提供支持，详情参见`:h neocomplete`,或者用更好的插件YouCompleteMe，这将在以后改进。
+1. `install.sh`中只针对常用的Cygwin以及Ubuntu提供自动化安装步骤，如针对其他系统，手工模仿install中的指令即可。
+2. 在安装过程中可能出现提示未找到XXX的错误，这是因为还在安装插件或装完插件还没有重新载入vim设置，没影响。
+3. 安装过程中如果原有`.vimrc`或者`.gvimrc`则提示是否备份原文件，Cygiwn和Ubuntu安装过程中如有些依赖外部程序没有会提示是否自动安装，以提供vim最完整的功能。
 
-有些步骤以集成至上述`install.sh`中，但还有些不同系统处理方式不一样。所以需要额外步骤：
+### 额外步骤
+
+大部分步骤已集成至上述`install.sh`中，但还有些步骤不同系统处理方式不一样。所以需要额外步骤：
 
 ### 1. 修正airline的图标乱码，修改终端的字符
 
 参考自：[https://github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
 其中install.sh中已经安装了fonts，然而有时候出现airline图标乱码的情况
-则需要修改所用的终端字体为powerline类的字体
+则需要修改所用的终端字体为powerline类的字体，因为不同终端改字体的方式不一样，所以不详述。
 
 ### 2. 配置路径
 部分插件需要配置路径，这部分内容已集成至`vimrc/custom_config.vim`中，只需修改该文件中的内容即可。
 
 ### 3. Cygwin中安装the_silver_searcher
 如需使用[ag]，需要安装相应[the_silver_searcher]，
-对于Cygwin为源代码编译安装，需要首先安装**gcc**,**make**,**automake**,**pkg-config**,**libpcre-devel**,**liblzma-dev**。
+对于Cygwin，ag为源代码编译安装，需要首先安装**gcc**,**make**,**automake**,**pkg-config**,**libpcre-devel**,**liblzma-dev**。
 
 ### 4. Cygwin环境在安装vimproc的问题
 在Cygwin环境中，对于插件vimproc，新加入的dll可能需要rebase，否则其执行fork时可能出现bug，
 参见[issue](https://github.com/Shougo/vimproc.vim/issues/241)
+
+## 卸载
+删除`.vim`文件夹，`~/.vimrc`，`~/.gvimrc`文件即可，然后将以前的配置（如果有）还原
 
 ## 功能介绍
 
 ### Plugins管理
 
 [pathogen]
-[vundle] 所有安装的插件参见：`./vimrcs/vundles.vim`
+[vundle]
+所有安装的插件参见：`./vimrcs/vundles.vim`
+所有插件安装在`./bundle/`文件夹中，如不需要某个插件，直接删除插件目录即可
 
 ### 目录浏览
 
@@ -107,7 +120,7 @@ tag主要有三方面用途：
 
 #### tag辅助自动补全
 
-参考neocomplete，如果有tag文件，也会针对其补全
+参考[neocomplete]，如果有tag文件，也会针对其补全
 
 #### tag辅助跳转
 
@@ -121,6 +134,7 @@ tag主要有三方面用途：
 避免每次修改后重新手动建立tags索引文件,
 但由于vim打开时gutentags会不断向上查找项目主目录，如果一直找不到耗时较长
 通常可以忍受，或者项目中建立git仓库（因为会以`.git`文件夹作为判断项目主目录的依据，于是很快返回）
+如果觉得还是对速度有影响，直接删除`./bundle/gutentags`目录即可。
 
 ### 快速查找
 
@@ -183,12 +197,21 @@ tag主要有三方面用途：
 重要性不大，不详述
 
 ## key-mapping
-绝大多数自定义的快捷键放在custom_hotkey.vim文件夹内，可根据自己的习惯修改。
+绝大多数自定义的快捷键放在`custom_hotkey.vim`文件夹内，可根据自己的习惯修改。
 尤其需要注意的是geek部分的改建，是否需要这样改见仁见智。
+
+有些插件的快捷键并没有在`custom_hotkey.vim`中修改，则采用该插件的默认快捷键，
+则查看该插件的说明文档了解详情。
+
+## Issue
+有些插件，包括syntastic，Ultisnips，gutentags等可能会让vim变慢，
+这时候将插件mv出去后（或者例如将`Ultisnips`重命名为`Ultisnips~`），重新打开vim可以查看是否为该插件的影响。
+确认不需要某个插件后直接删除该插件文件夹并将`vimrc/vundle.vim`文件中的对应插件注释掉。
 
 ## 其他参考：
 
 [原作者说明文档](https://github.com/kaochenlong/eddie-vi://github.com/kaochenlong/eddie-vim2)
+[推荐阅读-像IDE一样使用VIM](http://www.tuicool.com/articles/f6feae)
 
 [ag]:https://github.com/rking/ag.vim
 [the_silver_searcher]:https://github.com/ggreer/the_silver_searcher#installing
@@ -230,3 +253,4 @@ tag主要有三方面用途：
 [emmet]:https://github.com/mattn/emmet-vim
 [css-color]:https://github.com/ap/vim-css-color
 [multiple-cursors]:https://github/terryma/vim-multiple-cursors
+[autoformat]:https://github/Chiel192/vim-autoformat

@@ -12,6 +12,9 @@
 " and default keymaps of the plugins are not included.
 
 " geek_mapping {
+" Note: Other map settings for special type(such as cpp)
+" are in after/ftplugin/special_type.vim(such as cpp.vim)
+"
   " quick go to normal-mode
     inoremap jk <ESC>
 
