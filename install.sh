@@ -127,7 +127,7 @@ if system_is ubuntu; then
 
   if has_not_installed lua; then
     echo "You should manual install package: [lua]"
-    auto_install lua "sudo apt-get install lua"
+    auto_install lua "sudo apt-get install lua5.2"
   fi
 
   if has_not_installed ctags; then
