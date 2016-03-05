@@ -1,5 +1,0 @@
-
-[X] detect filetype and for each filetype, auto compile and run by mapping <F5>
-
-[ ] fixbug: when use `:make` the error temp file cannot been found.(cygwin)
-

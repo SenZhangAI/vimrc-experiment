@@ -209,7 +209,7 @@ tag主要有三方面用途：
 
 [multiple-cursors] 多光标选择
 
-[unimpaired] 同一管理了例如buffer切换，list切换等的快捷键
+[unimpaired] 统一管理了例如buffer切换，list切换等的快捷键
 
 #### unimpaired键位
 
