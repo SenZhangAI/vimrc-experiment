@@ -4,14 +4,14 @@
 
 execute pathogen#infect()
 
-source ~/.vim/vimrcs/vundles.vim
-source ~/.vim/vimrcs/settings.vim
-source ~/.vim/vimrcs/plugins_setting.vim
-source ~/.vim/vimrcs/neoComplete.vim
-source ~/.vim/vimrcs/custom_config.vim
-source ~/.vim/vimrcs/custom_hotkey.vim
-source ~/.vim/vimrcs/presentation_mode.vim
-source ~/.vim/vimrcs/writer_mode.vim
+source $HOME/.vim/vimrcs/vundles.vim
+source $HOME/.vim/vimrcs/settings.vim
+source $HOME/.vim/vimrcs/plugins_setting.vim
+source $HOME/.vim/vimrcs/neoComplete.vim
+source $HOME/.vim/vimrcs/custom_config.vim
+source $HOME/.vim/vimrcs/custom_hotkey.vim
+source $HOME/.vim/vimrcs/presentation_mode.vim
+source $HOME/.vim/vimrcs/writer_mode.vim
 
 syntax on                             " syntax highlight
 syntax enable
