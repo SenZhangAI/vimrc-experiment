@@ -10,9 +10,10 @@ else
 endif
 
 " geek mapping {
-inoremap pp p_
-inoremap ll _
-inoremap aa ->
+"inoremap pp p_
+"inoremap ll _
+"inoremap aa ->
+inoremap `` ->
 " } geek mapping
 
 " marching {
