@@ -258,6 +258,7 @@ let g:gutentags_generate_on_new = 0
 let g:tagbar_width=35
 let g:tagbar_indent=1
 let g:tagbar_autopreview=1
+let g:tagbar_sort=0
 
 " choose when need
 "let g:tagbar_iconchars = ['▶', '▼']  "(default on Linux and Mac OS X)
