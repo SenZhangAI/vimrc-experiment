@@ -22,10 +22,6 @@ function! PresentationModeOn()
     hi SpecialKey cterm=NONE ctermbg=none
     hi Nontext cterm=NONE ctermbg=none
     hi MatchParen ctermbg=208
-    " "for quick-scope
-    " "xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
-    let g:qs_first_occurrence_highlight_color = 88  " terminal vim
-    let g:qs_second_occurrence_highlight_color = 166  " terminal vim
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end
@@ -57,9 +53,6 @@ function! PresentationModeOff()
     hi Nontext cterm=NONE ctermbg=none
     hi vimIsCommand ctermfg=249
     hi MatchParen ctermbg=208
-    " "for quick-scope
-    let g:qs_first_occurrence_highlight_color = 155  " terminal vim
-    let g:qs_second_occurrence_highlight_color = 81  " terminal vim
     "let g:airline_theme='luna'
     exec "RainbowToggleOn"
   end

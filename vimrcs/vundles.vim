@@ -141,7 +141,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'nacitar/a.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
+"Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
 Plugin 'osyo-manga/vim-over'     " preview the result for commandline
 
 

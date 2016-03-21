@@ -21,6 +21,8 @@ try
     colorscheme solarized
     set background=dark
   else
+    " @see xterm-256-chart: https://en.wikipedia.org/wiki/File:Xterm_256color_chart.svg
+
     " "desert for Ubuntu
       "colorscheme desert256
       "set background=dark
