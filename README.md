@@ -84,7 +84,7 @@
 
 `F5`  将快捷键`F5`map到编译运行，可编译运行单个c、cpp文件，运行单个python，shell脚本或者makefile等
 
-`make` 具体参见`:h make`
+`make` 具体参见`:h make`，主要用于makefile中，并通过quickfix快速定位到错误处
 
 ### 语法错误检查
 
