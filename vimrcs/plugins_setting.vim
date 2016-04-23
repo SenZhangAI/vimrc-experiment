@@ -275,7 +275,7 @@ endif
 
 " vim-autoformat {
 let g:formatdef_astyle_google_cpp = '"astyle --mode=c --style=google -pcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
-let g:formatdef_astyle_sen_cpp = '"astyle --mode=c --style=java -xj -xw -xC120 -xL -OowYypcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
+let g:formatdef_astyle_sen_cpp = '"astyle --mode=c --style=java -xj -xw -xC120 -xL -NOowYypcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
 "let g:formatters_cpp = ['clangformat', 'astyle_cpp']
 let g:formatters_cpp = ['astyle_sen_cpp']
 " } end vim-autoformat

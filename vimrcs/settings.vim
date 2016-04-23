@@ -82,6 +82,7 @@ set wildignore+=*sass-cache*
 set wildignore+=*.DS_Store,*.bak
 set wildignore+=log/**
 set wildignore+=tmp/**
+set wildignore+=*.core
 
 " cursorline switched while focus is switched to another split window
 autocmd WinEnter * setlocal cursorline
@@ -109,7 +110,7 @@ autocmd FileType c,cpp,java setlocal formatoptions+=ro
 "C/C++ format settings
 "astyle formater is much better, for example: +N,(N,and insert space between operator etc.
 "autocmd FileType c,cpp,cc setlocal comments=sr:/*,mb:*,el:*/,://
-autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,N-s,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
+autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
 
 " for Indentation set to be 2 to get faster
 autocmd FileType ruby,javascript,html,xhtml,css,xml,xslt
