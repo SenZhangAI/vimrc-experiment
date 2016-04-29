@@ -185,7 +185,7 @@
     " Start interactive EasyAlign in visual mode(e.g. vip<hotkey>)
     vmap \= <Plug>(EasyAlign)
     " Start interactive EasyAlign for a motion/text object (e.g. <hotkey>ip)
-    nmap \a= <Plug>(EasyAlign)
+    nmap \= <Plug>(EasyAlign)
   " } end easy_align
 
   " wildfire{
