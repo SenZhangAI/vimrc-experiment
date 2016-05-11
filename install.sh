@@ -117,7 +117,7 @@ if system_is ubuntu; then
 
   if has_not_installed clang; then
     echo "Plugin [marching] depend on it"
-    auto_install clang "sudo apt-get install llvm build-essental && apt-get update && apt-get install clang-3.5"
+    auto_install clang "sudo apt-get install llvm build-essential && apt-get update && apt-get install clang-3.5"
   fi
 
   if has_not_installed astyle; then
