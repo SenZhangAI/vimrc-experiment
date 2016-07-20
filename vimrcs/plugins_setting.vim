@@ -203,7 +203,7 @@ let g:surround_61="<%= \r %>"  " =
 
 " UltiSnips {
 " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsEditSplit="vertical"
 " } end UltiSnips
 
