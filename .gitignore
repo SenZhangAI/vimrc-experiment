@@ -1,3 +1,5 @@
 # ignore bundle
 bundle/
 tags
+autoload/gocomplete.vim
+ftplugin/go/gocomplete.vim
