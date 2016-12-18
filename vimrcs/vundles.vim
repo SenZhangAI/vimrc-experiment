@@ -133,7 +133,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'osyo-manga/vim-marching'
 
 Plugin 'ervandew/supertab'
-"Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
 Plugin 'vimwiki/vimwiki'

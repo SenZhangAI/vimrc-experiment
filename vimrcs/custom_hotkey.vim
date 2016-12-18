@@ -279,7 +279,7 @@ let g:UltiSnipsEditSplit="vertical"
   " } end SuperTab
 
   " vim-autoformat {
-    noremap <leader>af :Autoformat<CR>
+    noremap <leader>af :Autoformat<CR>:w<CR>
   " } end vim-autoformat
 
   " vimwiki {
