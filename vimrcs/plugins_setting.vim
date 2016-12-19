@@ -305,3 +305,9 @@ let g:vimwiki_list = [{'path': '~/my_vimwiki/vimwiki',
       \ 'template_path': '~/my_vimwiki/vimwiki/template',
       \ 'template_default':"default.tpl"}]
 " } end vimwiki
+
+" vim-go {
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_list_type = "quickfix"
+" } end vim-go
