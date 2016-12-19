@@ -8,6 +8,7 @@ vim_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 vim_rc=~/.vimrc
 gvim_rc=~/.gvimrc
+nvim_rc=~/.nvimrc
 backup_rand=$RANDOM
 
 backup_file() {
@@ -26,13 +27,18 @@ backup_file() {
 
 backup_file $vim_rc
 backup_file $gvim_rc
+backup_file $nvim_rc
 
 # linking to .rc
 ## linking to .vimrc
 ln -s $vim_dir/vimrc $vim_rc 2>/dev/null
 
 ## linking to .gvimrc
+ln -s $vim_dir/vimrc $nvim_rc 2>/dev/null
+
+## linking to .gvimrc
 ln -s $vim_dir/gvimrc $gvim_rc 2>/dev/null
+
 
 # install vundle and plugin
 ## install vundle
@@ -117,7 +123,7 @@ if system_is ubuntu; then
 
   if has_not_installed clang; then
     echo "Plugin [marching] depend on it"
-    auto_install clang "sudo apt-get install llvm build-essential && apt-get update && apt-get install clang-3.5"
+    auto_install clang "sudo apt-get install llvm build-essential && sudo apt-get update && sudo apt-get install clang-3.8"
   fi
 
   if has_not_installed astyle; then
@@ -127,7 +133,7 @@ if system_is ubuntu; then
 
   if has_not_installed lua; then
     echo "You should manual install package: [lua]"
-    auto_install lua "sudo apt-get install lua5.2"
+    auto_install lua "sudo apt-get install lua5.3"
   fi
 
   if has_not_installed ctags; then
