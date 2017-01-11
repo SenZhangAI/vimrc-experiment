@@ -7,3 +7,10 @@ elseif executable("gcc")
 else
   nnoremap <buffer> <F5> :echo "No [clang] or [gcc] found!"
 endif
+
+" geek mapping {
+"inoremap <buffer> pp p_
+"inoremap <buffer> ll _
+"inoremap <buffer> aa ->
+inoremap <buffer> `` ->
+" } geek mapping
