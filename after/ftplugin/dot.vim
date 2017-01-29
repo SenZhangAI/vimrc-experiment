@@ -11,3 +11,5 @@ if executable("dot")
 else
   nnoremap <buffer> <F5> :echo "command: dot not found. \n you may need to install [graphviz] first"<CR>
 endif
+
+inoremap <buffer> `` ->
