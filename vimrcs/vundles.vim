@@ -50,11 +50,12 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
 Plugin 'SenZhangAI/vim-snippets'
-Plugin 'mattn/emmet-vim'     " this is use for fast HTML/CSS coding
+Plugin 'mattn/emmet-vim'      " this is use for fast HTML/CSS coding
 "Plugin 'c9s/perlomni.vim'    " for perl
 Plugin 'gcmt/wildfire.vim'
-"Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-abolish'    " better substitue and coercion
 Plugin 'tpope/vim-surround', {'name': 'surround'}
+Plugin 'tommcdo/vim-exchange'
 
 "snipmate is depend on vim-addon-mw-utils and tlib_vim
 "Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
