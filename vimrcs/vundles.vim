@@ -31,7 +31,7 @@ Plugin 'zhaocai/GoldenView.Vim'
 
 " @ Plugin --- [ Source Code Cheacker ]
 "Plugin 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation
-Plugin 'ludovicchabant/vim-gutentags' " automatically manage tags
+"Plugin 'ludovicchabant/vim-gutentags' " automatically manage tags, too slow
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 
@@ -113,10 +113,14 @@ Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
 
 
 " @ Plugin --- [ ADV Program Language ]
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
+Plugin 'nacitar/a.vim'
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
 Plugin 'asins/vimcdoc'
+Plugin 'wlangstroth/vim-racket'
+Plugin 'vimwiki/vimwiki'
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
@@ -131,16 +135,10 @@ Plugin 'Shougo/neosnippet-snippets'
 "Below Plugin vim-marching can combined with neocomplete, with need vimproc
 Plugin 'Shougo/vimproc.vim'
 Plugin 'osyo-manga/vim-marching'
-
 Plugin 'ervandew/supertab'
-"Plugin 'fatih/vim-go'
-Plugin 'wlangstroth/vim-racket'
 Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
 Plugin 'tpope/vim-repeat', {'name': 'repeat'}
-Plugin 'vimwiki/vimwiki'
 "Plugin 'itchyny/calendar.vim'  " A calender application for Vim
-Plugin 'nacitar/a.vim'
-Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'easymotion/vim-easymotion'
 "Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
 Plugin 'osyo-manga/vim-over'     " preview the result for commandline

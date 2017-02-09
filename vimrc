@@ -55,6 +55,7 @@ try
       "hi SpecialKey cterm=NONE ctermbg=none
       "hi Nontext cterm=NONE ctermbg=none
       "hi MatchParen ctermbg=208
+      "hi LineNr ctermbg=none
 
     " "Tomorrow Night Bright
       "colorscheme Tomorrow-Night-Bright
