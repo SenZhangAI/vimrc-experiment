@@ -19,7 +19,7 @@
     inoremap jk <ESC>
 
   " map command-mode to ;
-    nnoremap ; :
+    "nnoremap ; :
 
   " delimiteMate jump
     imap ;' <Plug>delimitMateJumpMany
