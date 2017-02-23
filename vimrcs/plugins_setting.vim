@@ -278,12 +278,12 @@ endif
 " } end vimcdoc
 
 " vim-autoformat {
-let g:formatdef_astyle_google_cpp = '"astyle --mode=c --style=google -pcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
+let g:formatdef_astyle_google_advance_cpp = '"astyle --mode=c --style=google -pcHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
 let g:formatdef_astyle_sen_cpp = '"astyle --mode=c --style=java -xW -xC120 -xL -OowypcfHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
-let g:formatdef_astyle_advance_cpp = '"astyle --mode=c --style=google -xC120 -xL -xj -OowpcHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
+let g:formatdef_astyle_advance_cpp = '"astyle --mode=c --style=java -xW -xC120 -xL -xj -OowpcHU -k1".(&expandtab ? "s".shiftwidth() : "t")'
 let g:formatdef_gofmt_go = '"gofmt -e"'
 "let g:formatters_cpp = ['clangformat', 'astyle_cpp']
-let g:formatters_cpp = ['astyle_advance_cpp']
+let g:formatters_cpp = ['astyle_google_advance_cpp']
 let g:formatters_go = ['gofmt_go']
 " } end vim-autoformat
 

@@ -113,7 +113,7 @@ autocmd FileType c,cpp,java setlocal formatoptions+=ro
 autocmd FileType c,cpp,cc setlocal cindent cino=:0,l1,g0,t0,+2s,cs,C1,(s,U1,k2s,m1,)50,*200
 
 " for Indentation set to be 2 to get faster
-autocmd FileType ruby,javascript,html,xhtml,css,xml,xslt
+autocmd FileType c,cpp,cc,ruby,javascript,html,xhtml,css,xml,xslt
       \ setlocal tabstop=2 shiftwidth=2 softtabstop=2 autoindent
 
 " two space indentation for some files
