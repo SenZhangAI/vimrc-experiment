@@ -55,7 +55,7 @@
     vnoremap > >gv
 
   " cancel searched highlight
-    nnoremap <CR> :nohlsearch<CR>
+    nnoremap // :nohlsearch<CR>
 
   " use arrow to shift buffer
     noremap <left> :bp<CR>
