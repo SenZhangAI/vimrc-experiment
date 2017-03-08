@@ -119,6 +119,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
 Plugin 'nacitar/a.vim'
 " markdown may need to install tabular first, but I use easy-align
 Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
+Plugin 'dhruvasagar/vim-table-mode' " use this to edit table
 Plugin 'asins/vimcdoc'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'vimwiki/vimwiki'
