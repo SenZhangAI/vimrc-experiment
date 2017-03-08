@@ -243,9 +243,9 @@ let g:UltiSnipsEditSplit="vertical"
     "nnoremap <F7> :set wrap? wrap!<CR>
   " } end toggle wrap
 
-  " Gundo {
-    "nnoremap <F8> :GundoToggle<CR>
-  " } end Gundo
+  " css_color {
+    nnoremap <F8> :call css_color#toggle()<CR>
+  " } end css_color
 
   " toggle syntax {
     " can make open file quicker
