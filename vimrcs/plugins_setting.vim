@@ -171,11 +171,13 @@ let g:rainbow_conf = {
 
 " markdown {
 " LaTex math: support $x^2$, $$x^2$$ syntax
+let g:tex_conceal = ""
 let g:vim_markdown_math=1
 " Highlight YAML frontmatter as used by jekyll
 let g:vim_markdown_frontmatter=1
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_no_extensions_in_markdown = 1
 " } end markdown
 
 " NERDTree {
