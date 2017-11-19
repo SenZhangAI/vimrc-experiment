@@ -154,7 +154,7 @@ elif system_is cygwin; then
     if auto_install ag; then
 
       echo    "   - [gcc] [make] MUST installed first."
-      echo    "   - the related packages:[automake] [pkg-config] [libpcre-devel] [liblzma-dev] MUST installed first."
+      echo    "   - the related packages:[automake] [pkg-config] [libpcre-devel] [liblzma-dev] [zlib-devel] MUST installed first."
       echo "      - Ag will not by installed successly if these packages havn't installed."
       read -p "   - have you INSTALLED these packages? [y/n]"  ans
       if [ "$ans" == "y" ]; then
