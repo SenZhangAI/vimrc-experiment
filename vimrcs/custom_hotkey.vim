@@ -167,10 +167,15 @@
       let g:ackprg = 'ag --vimgrep'
       noremap FF :Ag<SPACE>
     else
-      if executable("ack")
-        noremap FF :Ack<SPACE>
+      if executable("ag")
+      let g:ackprg = 'ag --vimgrep'
+        noremap FF :ag<SPACE>
       else
-        noremap FF :echo "need to install ACK or AG first! e.g. Ubuntu install: apt-get install silversearcher-ag"<CR>
+        if executable("ack")
+          noremap FF :Ack<SPACE>
+        else
+          noremap FF :echo "need to install ACK or AG first! e.g. Ubuntu install: apt-get install silversearcher-ag"<CR>
+        endif
       endif
     endif
   " } end Ag
