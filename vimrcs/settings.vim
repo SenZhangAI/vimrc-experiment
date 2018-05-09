@@ -30,7 +30,9 @@ set switchbuf=useopen
 set showtabline=2                     " always show tab
 set wildmenu                          " make tab completion for files/buffers act like bash
 set wildmode=longest:list,full        " use emacs-style tab completion when selecting files, etc
-set key=                              " disable encryption
+if !has('nvim')
+  set key=                              " disable encryption
+endif
 set synmaxcol=300                     " avoids syntax highlight failed on extremely long lines
 "set viminfo=                         " disable .viminfo file
 set viminfo^=%                        " Remember info about open buffers on close
