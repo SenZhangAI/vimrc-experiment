@@ -13,7 +13,7 @@
 ### 执行install.sh
 
 ```bash
-~ $ git clone https://github/SenZhangAI/vimrc-experiment ~/.vim
+~ $ git clone https://www.github.com/SenZhangAI/vimrc-experiment ~/.vim
 ~ $ cd .vim
 ~/.vim $ ./install.sh
 ```
