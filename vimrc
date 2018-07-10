@@ -30,30 +30,17 @@ try
       "hi CursorLine cterm=NONE ctermbg=53
 
     " "solarized dark
+      set termguicolors
       let g:solarized_termcolors=256
-      let g:solarized_termtrans=1
        "set terminal backgroundRGB=0 43 54
       colorscheme solarized
       set background=dark
-      hi CursorLine ctermbg=none
-      hi CursorColumn ctermbg=none
-      hi LineNr ctermbg=none ctermfg=244
-      hi Normal ctermfg=249
-      hi Comment ctermfg=244
-      hi SpecialKey cterm=NONE ctermbg=none
-      hi Nontext cterm=NONE ctermbg=none
-      hi vimIsCommand ctermfg=249
-      hi MatchParen ctermbg=208
 
     " " solarized light
+      "set termguicolors
       "let g:solarized_termcolors=256
-      "let g:solarized_termtrans=0
       "colorscheme solarized
       "set background=light
-      "hi SpecialKey cterm=NONE ctermbg=none
-      "hi Nontext cterm=NONE ctermbg=none
-      "hi MatchParen ctermbg=208
-      "hi LineNr ctermbg=none
 
     " "Tomorrow Night Bright
       "colorscheme Tomorrow-Night-Bright
