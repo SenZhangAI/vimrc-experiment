@@ -2,7 +2,7 @@
 " Mail: szhang.hust@gmail.com
 " Github: https://github.com/SenZhangAI
 
-source $HOME/.vim/vimrcs/vundles.vim
+source $HOME/.vim/vimrcs/plugins.vim
 source $HOME/.vim/vimrcs/settings.vim
 source $HOME/.vim/vimrcs/plugins_setting.vim
 source $HOME/.vim/vimrcs/neoComplete.vim
