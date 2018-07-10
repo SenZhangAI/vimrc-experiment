@@ -8,7 +8,8 @@ vim_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 vim_rc=~/.vimrc
 gvim_rc=~/.gvimrc
-nvim_rc=~/.nvimrc
+mkdir -p ~/.config/nvim/
+nvim_rc=~/.config/nvim/init.vim
 backup_rand=$RANDOM
 
 backup_file() {
@@ -216,6 +217,7 @@ echo ""
 echo "Structure:"
 echo ".vimrc        :  $vim_rc"
 echo ".gvimrc       :  $gvim_rc"
+echo ".nvimrc       :  $nvim_rc"
 echo "Config Folder :  $vim_dir"
 echo ""
 echo "Enjoy it :-)"

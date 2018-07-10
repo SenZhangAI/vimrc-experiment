@@ -1,6 +1,10 @@
 " Author: Sen Zhang
 " Mail: szhang.hust@gmail.com
 " Github: https://github.com/SenZhangAI
+"
+let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" add to runtimepath
+exec 'set rtp+='.s:home
 
 source $HOME/.vim/vimrcs/plugins.vim
 source $HOME/.vim/vimrcs/settings.vim
