@@ -129,7 +129,7 @@ if system_is ubuntu; then
   fi
 
   #install vimproc
-  install_vimproc "sudo make"
+  #install_vimproc "sudo make"
 
 elif system_is cygwin; then
 
@@ -176,7 +176,7 @@ elif system_is cygwin; then
   fi
 
   #install vimproc
-  install_vimproc "make -f make_cygwin.mak"
+  #install_vimproc "make -f make_cygwin.mak"
 fi
 
 if system_is cygwin; then

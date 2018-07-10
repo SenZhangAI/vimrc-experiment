@@ -27,7 +27,7 @@ Plug 'scrooloose/nerdtree'
 "Plug 'ryanoasis/vim-webdevicons'
 "Plug 'Xuyuanp/nerdtree-git-plugin' "this plugin may slowdown vim in some situation
 "Plug 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
-Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter', { 'on': 'NERDCommentorToggle' }
 "Plug 'danro/rename.vim'
 
 
@@ -74,13 +74,12 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dkprice/vim-easygrep'
 
-
 " @ Plugin --- [ Web Development Tools ]
 "Plug 'pangloss/vim-javascript'
 "Plug 'othree/javascript-libraries-syntax.vim'
 "Plug 'othree/yajs.vim'
 "Plug 'chrisbra/Colorizer'
-Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color', { 'for': ['css', 'html'] }
 "Plug 'hail2u/vim-css3-syntax'
 "Plug 'othree/html5.vim'
 "Plug 'othree/html5-syntax.vim'
@@ -101,14 +100,14 @@ Plug 'junegunn/vim-easy-align'
 
 " @ Plugin --- [ ADV Program Language ]
 Plug 'vim-scripts/DoxygenToolkit.vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'nacitar/a.vim'
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp'] }
+Plug 'nacitar/a.vim', { 'for': ['c', 'cpp'] }
 " markdown may need to install tabular first, but I use easy-align
-Plug 'plasticboy/vim-markdown'
-Plug 'dhruvasagar/vim-table-mode' " use this to edit table
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' } " use this to edit table
 Plug 'asins/vimcdoc'
-Plug 'wlangstroth/vim-racket'
-Plug 'vimwiki/vimwiki'
+Plug 'wlangstroth/vim-racket', { 'for': 'racket' }
+Plug 'vimwiki/vimwiki', { 'for': 'vimwiki' }
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
@@ -121,7 +120,7 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 
 "Below Plugin vim-marching can combined with neocomplete, with need vimproc
-Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'osyo-manga/vim-marching'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-unimpaired'
