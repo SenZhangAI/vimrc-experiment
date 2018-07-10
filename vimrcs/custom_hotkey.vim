@@ -141,7 +141,7 @@
   " }
 
   " Nerdcomment {
-    map \\ <Leader>c<space>
+    map <silent> \\ <Plug>NERDCommenterToggle
   " } end Nerdcomment
 
   " ctrlsf {
