@@ -27,7 +27,7 @@ Plug 'scrooloose/nerdtree'
 "Plug 'ryanoasis/vim-webdevicons'
 "Plug 'Xuyuanp/nerdtree-git-plugin' "this plugin may slowdown vim in some situation
 "Plug 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
-Plug 'scrooloose/nerdcommenter', { 'on': 'NERDCommentorToggle' }
+Plug 'scrooloose/nerdcommenter'
 "Plug 'danro/rename.vim'
 
 

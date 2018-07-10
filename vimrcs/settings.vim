@@ -23,7 +23,7 @@ set nobomb                            " no BOM(Byte Order Mark)
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
-set clipboard+=unnamedplus
+"set clipboard+=unnamedplus
 set splitright                        " always open vertical split window in the right side
 set splitbelow                        " always open horizontal split window below
 set scrolloff=4                       " start scrolling when n lines away from margins
