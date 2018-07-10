@@ -1,160 +1,136 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-let g:vundle_default_git_proto = 'git'
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" # Plugins Beginning #
-Plugin 'VundleVim/Vundle.vim', {'name': 'vundle'}
-"Plugin 'L9'
-
+silent! if plug#begin(get(g:, 'bundle_home', '~/.vim/bundles'))
 
 " @ Plugin --- [ Style Custom ]
 "Plugin 'godlygeek/csapprox'  " not useful to me, I adjust color by myself
-Plugin 'vim-airline/vim-airline', {'name': 'airline'}
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'powerline/fonts', {'name': 'powerline_fonts'}
-"Plugin 'ap/vim-buftabline'
-"Plugin 'flazz/vim-colorschemes', {'name': 'colorschemes'}
-Plugin 'morhetz/gruvbox'
-Plugin 'Yggdroot/indentLine'
-"Plugin 'nathanaelkane/vim-indent-guides'    "another indentLine style
-Plugin 'myusuf3/numbers.vim'
-Plugin 'kshenoy/vim-signature'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'luochen1990/rainbow'
-Plugin 'zhaocai/GoldenView.Vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+"Plug 'ap/vim-buftabline'
+"Plug 'flazz/vim-colorschemes', {'name': 'colorschemes'}
+Plug 'morhetz/gruvbox'
+Plug 'Yggdroot/indentLine'
+"Plug 'nathanaelkane/vim-indent-guides'    "another indentLine style
+Plug 'myusuf3/numbers.vim'
+Plug 'kshenoy/vim-signature'
+Plug 'Chiel92/vim-autoformat'
+Plug 'luochen1990/rainbow'
+Plug 'zhaocai/GoldenView.Vim'
 
 " @ Plugin --- [ Source Code Cheacker ]
-"Plugin 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation
-"Plugin 'ludovicchabant/vim-gutentags' " automatically manage tags, too slow
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/syntastic'
+"Plug 'sjl/gundo.vim'  "this plugin may slowdown vim in some situation
+"Plug 'ludovicchabant/vim-gutentags' " automatically manage tags, too slow
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/syntastic'
 
 
 " NERDTree Plugins Collections
-Plugin 'scrooloose/nerdtree'
-"Plugin 'ryanoasis/vim-webdevicons'
-"Plugin 'Xuyuanp/nerdtree-git-plugin' "this plugin may slowdown vim in some situation
-"Plugin 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
-Plugin 'scrooloose/nerdcommenter'
-"Plugin 'danro/rename.vim'
+Plug 'scrooloose/nerdtree'
+"Plug 'ryanoasis/vim-webdevicons'
+"Plug 'Xuyuanp/nerdtree-git-plugin' "this plugin may slowdown vim in some situation
+"Plug 'jistr/vim-nerdtree-tabs', {'name': 'nerdtree-tabs'}
+Plug 'scrooloose/nerdcommenter'
+"Plug 'danro/rename.vim'
 
 
 " @ Plugin --- [ Auto Complete ]
-Plugin 'Raimondi/delimitMate'
-Plugin 'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets'  " replaced by my forked vim-snippets
-Plugin 'SenZhangAI/vim-snippets'
-Plugin 'mattn/emmet-vim'      " this is use for fast HTML/CSS coding
-"Plugin 'c9s/perlomni.vim'    " for perl
-Plugin 'gcmt/wildfire.vim'
-Plugin 'tpope/vim-abolish'    " better substitue and coercion
-Plugin 'tpope/vim-surround', {'name': 'surround'}
-Plugin 'tommcdo/vim-exchange'
+Plug 'Raimondi/delimitMate'
+Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'  " replaced by my forked vim-snippets
+Plug 'SenZhangAI/vim-snippets'
+Plug 'mattn/emmet-vim'      " this is use for fast HTML/CSS coding
+"Plug 'c9s/perlomni.vim'    " for perl
+Plug 'gcmt/wildfire.vim'
+Plug 'tpope/vim-abolish'    " better substitue and coercion
+Plug 'tpope/vim-surround'
+Plug 'tommcdo/vim-exchange'
 
 "snipmate is depend on vim-addon-mw-utils and tlib_vim
-"Plugin 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
-"Plugin 'tomtom/tlib_vim', {'name': 'tlib'}
-"Plugin 'garbas/vim-snipmate', {'name': 'snipmate'}
+"Plug 'marcweber/vim-addon-mw-utils', {'name': 'addon-mw-utils'}
+"Plug 'tomtom/tlib_vim', {'name': 'tlib'}
+"Plug 'garbas/vim-snipmate', {'name': 'snipmate'}
 
 
 " @ Plugin --- [ CWD File Buffer Manager ]
-"Plugin 'Shougo/unite.vim'
-"Plugin 'Shougo/unite-outline'
-"Plugin 'Shougo/unite-session'
-"Plugin 'Shougo/vimfiler.vim'
-"Plugin 'tsukkee/unite-tag'
-"Plugin 'thinca/vim-unite-history'
+"Plug 'Shougo/unite.vim'
+"Plug 'Shougo/unite-outline'
+"Plug 'Shougo/unite-session'
+"Plug 'Shougo/vimfiler.vim'
+"Plug 'tsukkee/unite-tag'
+"Plug 'thinca/vim-unite-history'
 
 
 " @ Plugin --- [ Git && Shell Tools ]
-"Plugin 'Shougo/vimshell.vim'
-Plugin 'tpope/vim-fugitive', {'name': 'fugitive'}
-Plugin 'gregsexton/gitv'
-"Plugin 'mattn/webapi-vim'
-Plugin 'airblade/vim-gitgutter', {'name': 'gitgutter'}
+"Plug 'Shougo/vimshell.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
+"Plug 'mattn/webapi-vim'
+Plug 'airblade/vim-gitgutter'
 
 
 " @ Plugin --- [ Code BAT Search ]
-Plugin 'rking/ag.vim'
-Plugin 'thinca/vim-quickrun'
-Plugin 'dyng/ctrlsf.vim'
-"Plugin 'mklabs/grunt.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'dkprice/vim-easygrep', {'name': 'easygrep'}
+Plug 'rking/ag.vim'
+Plug 'thinca/vim-quickrun'
+Plug 'dyng/ctrlsf.vim'
+"Plug 'mklabs/grunt.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dkprice/vim-easygrep'
 
 
 " @ Plugin --- [ Web Development Tools ]
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'othree/javascript-libraries-syntax.vim'
-"Plugin 'othree/yajs.vim'
-"Plugin 'chrisbra/Colorizer'
-Plugin 'ap/vim-css-color'
-"Plugin 'hail2u/vim-css3-syntax'
-"Plugin 'othree/html5.vim'
-"Plugin 'othree/html5-syntax.vim'
-"Plugin 'groenewege/vim-less'
-"Plugin 'digitaltoad/vim-jade'
-"Plugin 'kchmck/vim-coffee-script'
-"Plugin 'elzr/vim-json'
-"Plugin 'StanAngeloff/php.vim'
-"Plugin 'tpope/vim-rails', {'name': 'rails'}
-"Plugin 'vim-ruby/vim-ruby', {'name': 'ruby'}
-"Plugin 'cakebaker/scss-syntax.vim'
+"Plug 'pangloss/vim-javascript'
+"Plug 'othree/javascript-libraries-syntax.vim'
+"Plug 'othree/yajs.vim'
+"Plug 'chrisbra/Colorizer'
+Plug 'ap/vim-css-color'
+"Plug 'hail2u/vim-css3-syntax'
+"Plug 'othree/html5.vim'
+"Plug 'othree/html5-syntax.vim'
+"Plug 'groenewege/vim-less'
+"Plug 'digitaltoad/vim-jade'
+"Plug 'kchmck/vim-coffee-script'
+"Plug 'elzr/vim-json'
+"Plug 'StanAngeloff/php.vim'
+"Plug 'tpope/vim-rails', {'name': 'rails'}
+"Plug 'vim-ruby/vim-ruby', {'name': 'ruby'}
+"Plug 'cakebaker/scss-syntax.vim'
 
 
 " @ Plugin --- [ Code Format ]
 " align tool, better than tabular
-Plugin 'junegunn/vim-easy-align', {'name': 'easy-align'}
+Plug 'junegunn/vim-easy-align'
 
 
 " @ Plugin --- [ ADV Program Language ]
-Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'octol/vim-cpp-enhanced-highlight', {'name': 'cpp-enhanced-highlight'}
-Plugin 'nacitar/a.vim'
+Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'nacitar/a.vim'
 " markdown may need to install tabular first, but I use easy-align
-Plugin 'plasticboy/vim-markdown', {'name': 'markdown'}
-Plugin 'dhruvasagar/vim-table-mode' " use this to edit table
-Plugin 'asins/vimcdoc'
-Plugin 'wlangstroth/vim-racket'
-Plugin 'vimwiki/vimwiki'
+Plug 'plasticboy/vim-markdown'
+Plug 'dhruvasagar/vim-table-mode' " use this to edit table
+Plug 'asins/vimcdoc'
+Plug 'wlangstroth/vim-racket'
+Plug 'vimwiki/vimwiki'
 
 
 " @ Plugin --- [ |Google| Geeks Plugin ]
-Plugin 'terryma/vim-multiple-cursors', {'name': 'multiple-cursors'}
-"Plugin 'marijnh/tern_for_vim'
-"Plugin 'Valloric/ListToggle'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
+Plug 'terryma/vim-multiple-cursors'
+"Plug 'marijnh/tern_for_vim'
+"Plug 'Valloric/ListToggle'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 "Below Plugin vim-marching can combined with neocomplete, with need vimproc
-Plugin 'Shougo/vimproc.vim'
-Plugin 'osyo-manga/vim-marching'
-Plugin 'ervandew/supertab'
-Plugin 'tpope/vim-unimpaired', {'name': 'unimpaired'}
-Plugin 'tpope/vim-repeat', {'name': 'repeat'}
-"Plugin 'itchyny/calendar.vim'  " A calender application for Vim
-Plugin 'easymotion/vim-easymotion'
-"Plugin 'unblevable/quick-scope'  " quick jump for f/F/t/T
-Plugin 'osyo-manga/vim-over'     " preview the result for commandline
-
+Plug 'Shougo/vimproc.vim'
+Plug 'osyo-manga/vim-marching'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-repeat'
+"Plug 'itchyny/calendar.vim'  " A calender application for Vim
+Plug 'easymotion/vim-easymotion'
+"Plug 'unblevable/quick-scope'  " quick jump for f/F/t/T
+Plug 'osyo-manga/vim-over'     " preview the result for commandline
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
+call plug#end()
+endif

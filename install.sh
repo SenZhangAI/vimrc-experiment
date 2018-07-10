@@ -39,21 +39,8 @@ ln -s $vim_dir/vimrc $nvim_rc 2>/dev/null
 ## linking to .gvimrc
 ln -s $vim_dir/gvimrc $gvim_rc 2>/dev/null
 
-
-# install vundle and plugin
-## install vundle
-if [ -d ./bundle/vundle ]; then
-  rm -rf ./bundle/vundle
-fi
-
-git clone https://github.com/VundleVim/Vundle.vim ./bundle/vundle
-
 ## install plugin
-vim +PluginInstall +qall
-
-# install fonts for airline
-echo "install... [powerline_fonts]"
-./bundle/powerline_fonts/install.sh
+vim +PlugInstall +qall
 
 has_not_installed() {
   echo "Check if [$1] installed..."

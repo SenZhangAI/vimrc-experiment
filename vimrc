@@ -2,8 +2,6 @@
 " Mail: szhang.hust@gmail.com
 " Github: https://github.com/SenZhangAI
 
-execute pathogen#infect()
-
 source $HOME/.vim/vimrcs/vundles.vim
 source $HOME/.vim/vimrcs/settings.vim
 source $HOME/.vim/vimrcs/plugins_setting.vim
