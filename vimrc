@@ -71,17 +71,12 @@ try
 catch
 endtry
 
-if has("win32unix") " for Cygwin
-" changes the cursor shape/color
-" in the terminal depending on the mode
-" see http://code.google.com/p/iterm2/issues/detail?id=710&q=cursor
-  if &term =~ "xterm\\|rxvt"
-    " use a | cursor in insert mode
-    let &t_SI = "\<Esc>[5 q"
+if &term =~ "xterm\\|rxvt"
+  " use a | cursor in insert mode
+  let &t_SI = "\<Esc>[5 q"
 
-    " use a rectangle cursor otherwise
-    let &t_EI = "\<Esc>[1 q"
+  " use a rectangle cursor otherwise
+  let &t_EI = "\<Esc>[1 q"
 
-    " reset cursor when vim exits
-  endif
+  " reset cursor when vim exits
 endif
